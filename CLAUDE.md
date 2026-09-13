@@ -1,11 +1,33 @@
-# Your harness
+# Harness
 
-This file is yours, and it arrives with no rules in it on purpose --- this note
-is all there is, and it goes when you write your own. The rules you hold the
-agent to are part of what gets marked, so they should be rules you decided on.
+## Process discipline
 
-Nothing about the starter is recorded here. The platform under you is fixed and
-documented in `README.md`, and the
-[course website](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/)
-publishes this deliverable's brief and spec. Read both before you plan or build;
-what the agent needs to carry from either is your call.
+This project is built in explicit phases, not straight to a website. The
+phase order and current status live in `planning/` and are narrated in
+`PROCESS.md`. Do not implement or edit site content (pages under `src/`)
+until `planning/course-concept.md`, `planning/curriculum.md`, and
+`planning/assessments.md` are all marked **FINAL** (their `DRAFT v0` header
+removed). If asked to build site content before that, say so instead of
+proceeding — the content isn't locked yet and building on top of a draft
+wastes the work.
+
+## Research discipline
+
+- Everything in `research/*/sources.md` is unverified until its `status`
+  column says otherwise. Do not treat an entry as fact just because it's in
+  the file.
+- Only a synthesized entry from `research/*/notes.md` — never a raw source
+  document (a whole paper, thesis, or article) — may be used as input for
+  course content, a `CLAUDE.md` rule, or a `spec/` check.
+- Any source actually cited in `PROCESS.md` or built into site content must
+  be verified first: the link resolves, and the author/venue/content match
+  what's claimed about it.
+
+## Course identity
+
+- Course code is `SLOP1439`. The `439` suffix must never change; only the
+  leading level digit may.
+
+Course-content-specific rules (e.g. what every teaching week must contain)
+get added here once the curriculum and assessment design are locked — not
+before.

@@ -7,15 +7,20 @@ from `planning/`, `CLAUDE.md`, `spec/`, or `PROCESS.md`.
 
 ## Structure
 
-- `course-design/` — general pedagogy: what makes a *good university course*
-  (constructive alignment, backward design, assessment design, scaffolding,
-  authentic assessment, etc.), independent of subject matter.
 - `subject/` — subject-matter research for the course topic itself (currently:
   designing a Call of Cthulhu scenario from scratch).
 - `examples/` — analysis of existing real courses (COMP4020 itself, and other
   distinctive courses) as design case studies — **principles to transfer, not
   pages to copy**. The assignment brief explicitly warns against rebuilding
   COMP4020's IA with a find-and-replace.
+
+No standalone "what makes a good course" (general pedagogy) folder —
+decided against maintaining a separate literature line for that. Where a
+pedagogy/learning-theory principle is actually needed to justify a design
+decision, it's cited inline in `subject/notes.md` at the point it's used
+(e.g. source #7, *Learning from Ludemes*, already bridges subject matter and
+learning theory — it's about how TTRPG mechanics map to learning processes —
+so it can carry that weight without a separate research line).
 
 ## Rules for this folder
 

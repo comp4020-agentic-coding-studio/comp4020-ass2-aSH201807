@@ -57,16 +57,25 @@ to commit to without spending a day scoring alternatives. The main risk this
 accepts: I haven't stress-tested that the runner-up wasn't actually better,
 only that this one clears the bar.
 
-### Phase 2 — Literature search (in progress)
+Worth being explicit about: I haven't written or run a CoC scenario myself.
+The interest is in the subject as a design problem, not first-hand Keeper
+experience. That means the course's authority has to come from the sources
+in `research/subject/`, read and synthesized honestly, rather than from
+personal practice I don't have — a different (and in some ways harder)
+position to design a course from than if I'd actually run these at a table.
+
+### Phase 2 — Literature search
 
 Ran an AI-assisted search pass to build an initial source list — official
 CoC scenario-writing guidance, scenario/mystery design theory, and a few
 academic sources on tabletop role-playing game design — logged in
-`research/subject/sources.md`. Every entry is marked `unverified` until I've
+`research/subject/sources.md`. Every entry was marked `unverified` until
 individually checked that the link resolves and the author/venue/content
-match what's claimed; nothing from this list gets treated as fact or cited
-here until that check happens. This log gets an entry once verification and
-synthesis (`research/subject/notes.md`) are actually done.
+match what's claimed, rather than trusting an AI-assisted search at face
+value. All 9 entries verified 2026-09-13; one author attribution needed
+correcting (a paper credited in shorthand to a single author actually has
+seven). Reading and synthesizing each source into `research/subject/notes.md`
+is the remaining Phase 2 work — an entry gets added here once that's done.
 
 ## Before you ship
 

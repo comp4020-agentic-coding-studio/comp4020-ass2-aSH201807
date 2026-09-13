@@ -24,7 +24,7 @@ Verified ≠ read-and-synthesized yet — that's still `notes.md`'s job.
 |---|-------|-------------------|------|--------|
 | 5 | Call of Cthulhu 7e Scenario Design Guide | Andrew Blase, The Role Players Guild | https://theroleplayersguild.com/articles/coc-7e/keeper-resources/scenario-design | verified — richer than expected: hidden-truth six-question framework, layered mysteries, clue webs (core/supporting/advantage), antagonist timelines, 10-step build process |
 | 6 | Call of Cthulhu 7e Keeper Resources Guide | The Role Players Guild | https://theroleplayersguild.com/articles/coc-7e/keeper-resources | verified — hub page, links to guide 5 plus NPC/horror/pacing guides |
-| | Node-based scenario design / redundant clue webs (concept, not a single cited source) | The Alexandrian (general body of work) | — | needs a specific article link, not yet found |
+| | Node-based scenario design / redundant clue webs (concept, not a single cited source) | The Alexandrian (general body of work) | — | see #5 — its own "Choose a Scenario Structure" and "Design a Redundant Clue Web" sections already cover this (see `research/subject/reading-notes/blase-rpg.md`); leaving this row open in case a dedicated Alexandrian article is still worth finding for a second perspective |
 
 ## Academic / scholarly
 

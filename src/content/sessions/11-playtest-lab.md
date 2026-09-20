@@ -21,7 +21,7 @@ of what to watch for while it happens.
 
 ## Before the session
 
-If you don't already have a group, use the playtest-matching list Idris
+If you don't already have a group, use the playtest-matching list Nodens
 keeps — pairing up with another student's draft is a completely valid way
 to satisfy this. Bring your scenario materials in whatever state they're
 in; they don't need to be finished, just runnable for a scene or two.

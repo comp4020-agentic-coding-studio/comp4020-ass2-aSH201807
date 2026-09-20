@@ -26,3 +26,6 @@ actually needs.
   the players, or does it need a specific order to make sense
 - hooks: pulled in versus choosing to investigate, and what each implies
   about your players' agency from scene one
+- why a structure often needs one scene that exists purely to give a
+  non-combat, non-searching character something to do — a social clue
+  nobody would otherwise get a scene to use

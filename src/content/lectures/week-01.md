@@ -23,6 +23,9 @@ process and where the semester's studios and assessments sit against it.
 
 - why "how to write a scenario" is a different course from "how to play
   Call of Cthulhu"
+- deciding on genre before hunting for inspiration: a straight Mythos
+  scenario, or a fan-fusion that borrows another setting's flavour under
+  Call of Cthulhu's own rules
 - the five-stage pipeline: premise, truth and antagonist, structure,
   clues and delivery, playtest and assembly
 - where this course's authority comes from: the convenor's own scenario

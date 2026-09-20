@@ -26,3 +26,6 @@ specifically, where it's most often gotten wrong.
   target the Keeper is trying to hit
 - diegetic wording: phrasing a check as something the character is doing
   in the world, not a mechanical prompt
+- matching how many rolls you call for to what your specific players
+  enjoy — the same failed roll reads as fun unpredictability to one table
+  and as punishing randomness to another

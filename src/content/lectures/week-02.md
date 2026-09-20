@@ -23,4 +23,7 @@ names them so the studio can use them on purpose instead of by accident.
 - why naming your source of inspiration honestly (a film, a memory, a news
   story) tends to produce a sharper premise than starting from "what
   Mythos thing should I use"
+- turning a real story into reusable pieces — a specific setting, actor,
+  method and object — that transplant cleanly onto a new Mythos race,
+  rather than reusing the whole plot
 - how this feeds into the Scenario Pitch, due after week 3

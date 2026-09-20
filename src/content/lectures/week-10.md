@@ -29,3 +29,8 @@ pacing danger so it reads as escalation rather than an arbitrary spike.
   the monster itself) before a threat can actually kill
 - this is also prep for playtesting in week 11 — a scenario that
   over-explains on the page tends to over-explain at the table
+- a puzzle earns its place only when solving it teaches players something
+  a plain skill check can't — everything else should just be a check
+- giving every NPC a one-sentence reason to exist and exactly one
+  playable trait, and cutting the rest rather than padding the cast for
+  flavour

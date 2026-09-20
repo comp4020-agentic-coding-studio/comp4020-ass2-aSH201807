@@ -26,3 +26,7 @@ lecture introduces both before the studio applies them to your own draft.
   without gating it)
 - why redundancy — more than one path to a core clue — matters more than
   which taxonomy you use to think about it
+- why the three delivery formats matter beyond flavour: literature clues
+  are close to guaranteed once a character looks, social clues should
+  never hard-lock to one NPC, and trace clues let a threat register
+  without staging a direct encounter

@@ -62,10 +62,24 @@ import { sessionLabels, siteConfig } from "../site-config";
     <Card title="People" href="/people/">
       <p>Who teaches the course and how to reach them.</p>
     </Card>
+    <Card title="Materials" href="/materials/">
+      <p>The full list of external reference materials the course draws on.</p>
+    </Card>
   </CardGrid>
 </ContentLayout>
 
 <style>
+  /* The theme renders h1 at regular weight everywhere (large-and-light by
+     design, see base.css) — bolded here for the homepage's course title
+     only. :global() is required because ContentLayout renders the <h1>
+     itself rather than as slotted content from this file, so Astro's
+     scoping attribute never reaches it; this rule still can't leak to
+     other pages, since Astro only ships a page's own <style> block with
+     that page's bundle. */
+  :global(main#main > h1) {
+    font-weight: 700;
+  }
+
   .course-tags {
     display: flex;
     flex-wrap: wrap;

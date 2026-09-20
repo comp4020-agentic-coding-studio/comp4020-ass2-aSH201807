@@ -1,0 +1,20 @@
+---
+// The theme's Nav component hardcodes the brand wordmark's href to the
+// site root — there's no prop to point it elsewhere. Since the wordmark
+// re-renders fresh on every view-transition navigation (it isn't
+// `transition:persist`ed), this re-patches it after each `astro:page-load`
+// the same way Nav's own script re-initialises itself.
+import { miskatonicUrl } from "../site-config";
+---
+
+<script define:vars={{ miskatonicUrl }}>
+  function patchBrandLink() {
+    const brand = document.querySelector(".at-nav-brand");
+    if (!brand) return;
+    brand.href = miskatonicUrl;
+    brand.target = "_blank";
+    brand.rel = "noopener noreferrer";
+  }
+  patchBrandLink();
+  document.addEventListener("astro:page-load", patchBrandLink);
+</script>

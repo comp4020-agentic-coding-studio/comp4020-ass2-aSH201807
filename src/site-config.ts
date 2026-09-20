@@ -16,9 +16,18 @@ export const courseApiCollections = [
   { key: "policies", dir: "pages/policies" },
 ];
 
+// The nav brand renders as a text wordmark (not the Slop crest image) so it
+// can read "Miskatonic University" and link out to the in-universe fan site
+// below instead of home — see BrandLinkOverride.astro, injected into every
+// page's head slot, for how the link target is patched in.
+export const miskatonicUrl = "https://miskatonic.cthulhuclub.com/";
+
 export const siteConfig = defineSiteConfig({
   ...slopBranding,
-  name: "Slop University",
+  name: "Miskatonic University",
+  logo: undefined,
+  logoDark: undefined,
+  logoCompact: undefined,
 
   links: [
     { text: "Lectures", href: "/lectures/" },

@@ -20,6 +20,28 @@ that idea with pacing: a threat that can kill a player character with no
 warning isn't tense, it's arbitrary — escalation only reads as escalation
 if the players had a chance to notice it coming.
 
+Andrew Blase's horror-atmosphere guide (source #12) argues the "reveal"
+should show effects before causes: an impossible injury, an altered room,
+missing time — not the creature's full biology or its name. A name only
+earns its place if learning it "changes what the group can do." The same
+guide's escalation table sorts a scene into five stages — unease,
+confirmation, encroachment, confrontation, aftermath — and is explicit
+that escalation doesn't have to mean bigger monster: it can be social,
+moral, or environmental instead. Use that as a second checklist item when
+rewriting your monster-forward description: after implying rather than
+naming, ask which stage the scene is actually in, and whether the next
+scene earns the next stage up rather than jumping straight to
+confrontation.
+
+For the timeline check specifically, Sandy Petersen's "Creepy Stuff Rule"
+(via Alexander's write-up, source #4) is the sharper version of this
+week's second spec point: players need three escalating warnings — a
+hint, a clear indication of danger, then the monster itself — before a
+threat is allowed to actually hurt someone, precisely so that harm reads
+as earned rather than arbitrary. His own one-line test for the failure
+case still holds as a gut check: "you can't just open a random door and
+then be eaten by the shoggoth."
+
 ## Before the session
 
 Find the single most "monster-forward" description in your draft — the one

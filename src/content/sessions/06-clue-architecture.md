@@ -29,10 +29,24 @@ leave room on the page (or a column, if it's a spreadsheet).
 
 ## In the session
 
-Tag every clue in every scene against both taxonomies. Then check
-redundancy specifically: for each node that's load-bearing (removing it
-would break the whole chain), is there a second way to reach the same
-information? If not, that's this week's homework.
+Tag every clue in every scene against both taxonomies, then check delivery
+against three practical rules:
+
+- **Literature clues** (documents, records, a diary page) are close to
+  guaranteed finds — a character with a phone or a library card will get
+  them eventually. Put your broadest, most load-bearing information here,
+  not your most interesting reveal.
+- **Social clues** should never be hard-locked to one NPC. Write down which
+  characters *could* plausibly give a piece of information, not "only
+  Professor X knows this" — players who never talk to Professor X shouldn't
+  lose the clue entirely.
+- **Trace clues** (a footprint, a smell, a scratch mark) are your best tool
+  for making a Mythos threat felt without staging a direct encounter —
+  useful anywhere you want dread without a fight scene.
+
+Then check redundancy specifically: for each node that's load-bearing
+(removing it would break the whole chain), is there a second way to reach
+the same information? If not, that's this week's homework.
 
 ## Afterwards
 

@@ -23,5 +23,9 @@ pacing danger so it reads as escalation rather than an arbitrary spike.
   treating that as the point rather than a gap to fill
 - escalation: a threat should give visible warnings before it's capable
   of killing a character, so danger is legible rather than sudden
+- two named frameworks for that pacing: Blase's five-stage escalation
+  (unease, confirmation, encroachment, confrontation, aftermath) and
+  Petersen's "Creepy Stuff Rule" — three warnings (hint, clear danger,
+  the monster itself) before a threat can actually kill
 - this is also prep for playtesting in week 11 — a scenario that
   over-explains on the page tends to over-explain at the table

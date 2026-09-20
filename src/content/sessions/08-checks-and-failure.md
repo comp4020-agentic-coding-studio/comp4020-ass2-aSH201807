@@ -19,6 +19,23 @@ a single failed roll deleting the only route forward. This studio is about
 finding every check in your draft that could do that, and rewriting it so
 a failure changes the cost or the framing rather than the outcome.
 
+Failure text is where most drafts leak information without meaning to. "You
+don't notice anything" reads as the roll failing; "you notice nothing" reads
+as the *room* having nothing to notice — a subtle difference that changes
+whether players trust their next Spot Hidden roll at all. Write the success
+and failure text together, as a pair, so a failed roll still describes what
+the character perceives — just less of it, or later, or at a cost — rather
+than describing an empty room.
+
+Sanity loss gets the same discipline: it's a consequence of what a
+character just witnessed, never a target you're writing toward. A
+scenario that hands out SAN loss for its own sake reads as punitive rather
+than horrific. If a roll can push a character into temporary or
+indefinite insanity, plan for it before the table does — usually by
+quietly lowering the difficulty of whatever check or fight comes right
+after, since a scenario that assumes every character stays lucid and
+useful will break the moment one doesn't.
+
 ## Before the session
 
 Go through your scene map and mark every point where you currently plan to

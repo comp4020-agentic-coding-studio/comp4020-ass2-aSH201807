@@ -17,6 +17,26 @@ someone enjoys solving it and it was worth the table time it cost. That
 means using puzzles sparingly, and only where the clue behind it matters
 enough to justify slowing the group down.
 
+Puzzles roughly sort into four types — find-the-object, spot-the-pattern,
+wordplay, and decoding — and none of them outranks the others; the right
+type follows from the clue, not from what feels impressive to design. Two
+tests decide whether a clue deserves a puzzle at all rather than a plain
+skill check:
+
+- **The "why bother" test.** If a check would deliver the same information
+  just as well, use the check — a puzzle only earns its place when solving
+  it teaches players something a check can't. Compare finding a badge
+  loose in a drawer (a Spot Hidden roll) against finding it inside a
+  four-digit combination safe behind a bookcase: physically the same
+  object, but the second version *tells* players this badge matters before
+  they've even read what it says.
+- **The multi-thread test.** A single puzzle that fully blocks progress is
+  a stuck point waiting to happen. Give players two or three
+  independently-solvable puzzles pointing at the same piece of information
+  instead — this is also, mechanically, most of what makes a scenario
+  "open" rather than linear: multiple live threads a stuck group can set
+  aside and come back to.
+
 ## Before the session
 
 From your tagged clue map, pick at most one or two clues that are both

@@ -119,6 +119,43 @@ than a gap. `pnpm check` is green: 0 build errors, the axe accessibility
 audit passes across all 32 pages, no broken internal links, the one deck
 compiles, and all 5 spec/data-integrity tests pass.
 
+### Revisiting the research-discipline rule mid-review
+
+On a review pass, the studio pages read as thinner than the source material
+actually supports. The original `CLAUDE.md` rule ("only a synthesized
+`notes.md` entry, never a raw source, may feed content") was written to
+stop an agent from generating a generic, unearned-sounding course out of
+material it was just handed — a legitimate concern for the *literature*
+(sources #1–13), which is third-party, copyrighted work. It over-applied to
+source #14, my own decade of GM notes: there's no copyright or "unearned
+authority" issue with drawing directly on my own writing. I amended the
+rule to exempt source #14 outright, and separately to allow drawing
+directly from `research/subject/reading-notes/*` (the verified-source
+extractions, not the published articles themselves) provided the specific
+source is named wherever its framework or example is used and the
+reading-note's own wording isn't lifted near-verbatim — citation with
+attribution, not synthesis-gating, is what actually protects against
+plagiarizing the literature. Recorded in `CLAUDE.md`'s Research discipline
+section.
+
+### Thickening the studio pages (weeks 3–10)
+
+Applying the amended rule above, weeks 3, 4, 5, 6, 7, 8, 9 and 10 each got a
+paragraph or two of concrete, named-source material woven into the studio
+body: source #14 directly (weeks 6–9, my own clue-delivery, puzzle,
+failure-text and NPC rules) and cited reading-notes extractions from
+already-verified literature (week 3 and 4 draw Blase's "strong scenario
+question," six-question hidden truth, and active-timeline framework; week 5
+draws Blase's five-part location template; week 10 draws Blase's escalation
+stages and Petersen/Alexander's "Creepy Stuff Rule," via source #4 and #12).
+Source #12 (Blase's horror-atmosphere guide) was still `unverified` in
+`sources.md` when I went to cite it for week 10 — caught by the reading-notes
+exception's own condition that only already-verified sources qualify, so I
+verified it (link resolves, author/venue/content match) before using it, not
+after. Weeks 1, 2, 11 and 12 were left alone: 1 and 2 are orientation/premise
+weeks already reasonably dense, and 11–12 are playtest/assembly logistics
+where forcing in a literature citation would be padding, not substance.
+
 ## Before you ship
 
 `pnpm check:evidence` verifies that the starter's template comment and

@@ -22,6 +22,18 @@ and more improvisation to hold together). Neither choice is more advanced
 than the other — they suit different session lengths and different
 groups.
 
+Blase (source #5) argues the antagonist "should act while investigators
+investigate" rather than sit still waiting to be found, via an active
+timeline of three to five escalating stages tied to visible signals — a
+locked office or a frightened contact, then more guards or a
+disappearance, then strange weather or ritual signs, then confrontation.
+The clock advances on story time passing, on investigator actions that
+create visibility, on failed rolls, or on deliberate antagonist choices —
+never just because the players paused to think. An open structure only
+holds together if this timeline is doing real work in the background;
+otherwise "the truth unfolds whether or not players intervene" is just a
+claim, not something the players can actually notice happening.
+
 ## Before the session
 
 Reread your Scenario Pitch's truth. Ask which structure it actually

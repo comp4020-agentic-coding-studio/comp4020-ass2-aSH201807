@@ -32,6 +32,15 @@ reveals a specific clue, or is a stated obstacle. If the sentence is
 vague, the NPC probably is too. Survivors then get exactly one vivid,
 playable trait — not a paragraph of backstory a player will never see.
 
+Two more cuts, aimed specifically at scenes with more than one NPC present:
+check that no scene relies on two NPCs talking *to each other* while
+players watch — if the only way to deliver a piece of information is
+through NPC-NPC dialogue, players stop being the protagonists of the
+scene, and the fix is almost always to give that information to a PC
+directly instead. And check dialogue against era and role: a 1920s
+professor and a dockworker shouldn't sound interchangeable, and neither
+should say something their background gives them no way to know.
+
 ## Afterwards
 
 Fold the cut list back into your Investigation Architecture submission,

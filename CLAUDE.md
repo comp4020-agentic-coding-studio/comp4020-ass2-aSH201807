@@ -22,6 +22,26 @@ wastes the work.
 - Any source actually cited in `PROCESS.md` or built into site content must
   be verified first: the link resolves, and the author/venue/content match
   what's claimed about it.
+- **Exception, source #14**: `research/subject/personal-notes-raw.txt` is
+  the course author's own original writing, not a third-party source, so
+  the copyright/plagiarism and "unearned authority" concerns behind the rule
+  above don't apply to it. Content may draw directly on its specific
+  frameworks and worked examples (translated/adapted into the course's own
+  voice, not machine-translated verbatim) without going through a separate
+  `notes.md` synthesis step first.
+- **Exception, `research/subject/reading-notes/*`**: these are extractions
+  from already-verified, publicly-published sources (#1, #4–13), not raw
+  copies of the works themselves. Content may draw a framework, term or
+  worked example from one of these files directly into course content
+  without waiting for a full `notes.md` synthesis entry first, on two
+  conditions: (1) the specific source is named where it's used (as week 6
+  already does for Blase's core/supporting/advantage framework) — an idea
+  or framework can be taught with attribution, but the reading-note's own
+  wording may not be lifted near-verbatim, since these files are explicitly
+  raw extraction rather than paraphrase (see each file's own header); (2)
+  the source's `sources.md` status is already `verified`. This still
+  doesn't license copying the underlying published article itself — only
+  these already-verified extractions of it.
 
 ## Course identity
 

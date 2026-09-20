@@ -22,6 +22,22 @@ race, or a personal object fused with a specific Great Old One's cult, are
 both the same move: borrow the unfamiliar half from the Mythos, keep the
 familiar half from your own premise.
 
+Blase's scenario design guide (source #5) frames this as starting from a
+**question**, not a plot: "Which Outer God is behind this?" is too
+Mythos-forward to build a truth on, but "why did the astronomer destroy
+their own telescope?" is concrete enough to answer. If your premise
+doesn't yet suggest a question a stranger would want answered, that's a
+sign the truth isn't ready to write. Once you have a question, Blase's
+"hidden truth" is a sharper version of the causal chain this studio asks
+for — the Keeper's answer key, written as six questions: what happened
+before play, what the antagonist wants, what they're doing right now,
+what they fear or need to hide, what makes the threat unnatural or
+horrific, and what could change the outcome. Answering all six is a
+stronger test than the goal → past action → next step → consequence chain
+alone, and it's worth explicitly separating what a cultist *believes*
+they're doing from what's actually true — the gap between the two is
+often where a scenario's best twist lives.
+
 ## Before the session
 
 Skim two or three Mythos entities or factions you don't already know well.

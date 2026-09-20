@@ -170,6 +170,34 @@ content (source #1) — used as week 1's worked walkthrough example instead
 of an unnamed scenario. Both #1 and #5 were already `verified` before this
 pass.
 
+### Allowing verbatim reuse of source #14, and publishing it directly
+
+The amended rule from the previous section still only allowed source #14 to
+feed lecture content translated/adapted into the course's own voice, not
+copied verbatim — a leftover from treating it too much like the third-party
+literature. On review, the lecture paragraphs drawing on it read as thinner
+than my own original wording, so I amended the exception a second time: it's
+my own writing, so there's no plagiarism or unearned-authority reason to
+insist on paraphrase, only translation where the site is in a different
+language from the source. I then redid the source-#14 paragraphs in weeks 1,
+2, 4, 6, 8 and 10 as much closer, literal translations of the specific
+passages they draw on, rather than the looser paraphrase from the pass
+before —
+[`7070e5e`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-aSH201807/commit/7070e5e).
+
+Once source #14 could be reused directly, publishing the whole document made
+more sense than continuing to extract fragments of it into six separate
+lectures. I translated and organized the full raw notes into a standalone
+`materials/scenario-writing-guide` page and linked it from the materials
+index, unnumbered and outside the verified-source list, since it's my own
+writing rather than a third-party reference — noting on the page which
+lectures draw on it —
+[`91368ad`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-aSH201807/commit/91368ad).
+It's flagged as recommended reading on the materials index using the
+theme's built-in `:::tip` callout, rather than new CSS, so it stays
+consistent with the theme's own light/dark handling —
+[`d927730`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-aSH201807/commit/d927730).
+
 ## Before you ship
 
 `pnpm check:evidence` verifies that the starter's template comment and

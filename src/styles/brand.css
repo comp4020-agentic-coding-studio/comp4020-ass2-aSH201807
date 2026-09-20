@@ -1,0 +1,20 @@
+/* Miskatonic University brand palette for astro-theme-university.
+ *
+ * Colour scheme referenced from https://www.cthulhuclub.com/ (a Cthulhu
+ * Mythos fan site): a toxic acid green against near-black, with a duller
+ * green for secondary/active states. Only the three brand tokens are set —
+ * the theme derives every background, text, border and status colour from
+ * these via relative colour syntax (see astro-theme-university's
+ * styles/tokens.css), so the existing light/dark toggle and its verified
+ * WCAG contrast ratios (contrast.test.ts) keep working unchanged; only the
+ * hue shifts from the old gold/bronze to green.
+ *
+ * The reference site's own literal black (#000) backgrounds and
+ * cwTeXFangSong Chinese font aren't pulled in: hardcoding those would fight
+ * the theme's light-mode/dark-mode derivation and put an unrelated script's
+ * font on an English-language course site. */
+:root {
+  --at-primary: #20f216;
+  --at-secondary: #5eb700;
+  --at-tertiary: #4a6b3f;
+}

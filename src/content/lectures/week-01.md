@@ -29,6 +29,15 @@ wholesale. Neither option is more legitimate than the other, but settling
 it before you go looking for a spark saves you from falling for an idea
 that turns out not to fit the ruleset you'd already picked.
 
+First you need to settle what genre the scenario is even in — you can't
+write a story without the inspiration for it, and only after that should
+you start pulling in the Mythos' generic elements, checking which of them
+actually fit that inspiration, and folding them in to tell a Cthulhu-
+flavoured story. There are two broad categories to choose between: a
+straight Call of Cthulhu scenario, or a fan-fusion scenario that borrows
+Call of Cthulhu's rules for an entirely different setting — for example,
+a *Lord of the Mysteries* fan scenario.
+
 ## Outline
 
 - why "how to write a scenario" is a different course from "how to play

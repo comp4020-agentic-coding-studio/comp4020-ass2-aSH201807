@@ -26,9 +26,9 @@ wastes the work.
   the course author's own original writing, not a third-party source, so
   the copyright/plagiarism and "unearned authority" concerns behind the rule
   above don't apply to it. Content may draw directly on its specific
-  frameworks and worked examples (translated/adapted into the course's own
-  voice, not machine-translated verbatim) without going through a separate
-  `notes.md` synthesis step first.
+  frameworks and worked examples, including copying its wording verbatim
+  (translated where the site content is in a different language from the
+  source), without going through a separate `notes.md` synthesis step first.
 - **Exception, `research/subject/reading-notes/*`**: these are extractions
   from already-verified, publicly-published sources (#1, #4–13), not raw
   copies of the works themselves. Content may draw a framework, term or

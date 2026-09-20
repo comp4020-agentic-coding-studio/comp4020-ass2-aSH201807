@@ -24,6 +24,20 @@ do — a scene built around a conversation rather than a lock, say, so a
 player who invested in social skills gets a moment where that investment
 matters, not just a spectator's view of everyone else's clues.
 
+A scenario's structure comes in two forms: open and linear. Open means
+many branches, many scenes, clues in abundance, and a lot of freedom — and
+it demands more of the writer to hold together. Linear means a compact
+build and a tight plot, good for a short session: you only need one
+throughline to string the scenes onto, which keeps what the design needs
+simple, provided you fix the key scenes the players will pass through and
+make sure each one carries the clue that can pull them into the next.
+As for how players get pulled into the scenario at all: they can be
+pulled in passively — everyone just rented a cabin in the woods for a
+memorable Christmas, and only after arriving do they discover there's a
+Wendigo in the forest — or they can choose to get involved themselves —
+out of nowhere they receive an anonymous letter, or a friend or family
+member goes missing, or they receive a death threat.
+
 ## Outline
 
 - linear structure: easier to run and to prep, less tolerant of player

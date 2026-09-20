@@ -24,6 +24,17 @@ onto almost any Mythos race without a seam, because you've kept only what
 made the original story specific and discarded whatever explained it in
 non-Mythos terms.
 
+Find inspiration in your own daily life first, then pick the Mythos
+content that fits it — something you saw in the news, a cold case that's
+been open for years, a summer camp that went wrong, a scientific theory
+or experiment you got curious about, or a strange trinket you happened to
+see. At the level of the setting itself, the Mythos' generic elements are:
+ancient, unknown, chaos, and space. Take a real story like the "Dulce
+Base" incident and you can extract concrete, reusable pieces straight out
+of it: the military base itself, the underground "greys," the laser
+weapons, a finger vaporised in an instant, alien experiments on humans,
+and the unnatural underground tunnels.
+
 ## Outline
 
 - the four flavours: ancient, unknown, chaos, space — what each one does to

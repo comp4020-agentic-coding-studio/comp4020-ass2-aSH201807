@@ -25,6 +25,16 @@ preference is wrong, but a Keeper who knows which one their table leans
 toward can dial the whole scenario's roll density up or down accordingly,
 rather than applying one default to every group.
 
+Don't let a check become the point where the game gets stuck. Don't let
+a check become the point where the game gets stuck. Don't let a check
+become the point where the game gets stuck. If a player character misses
+a key clue, or the clue pointing to the next scene, because a check
+failed, the Keeper is left either scrambling to improvise a new thread
+outside the scenario's existing structure, or giving up and letting
+everyone walk toward a total party kill. And madness is the *result* of a
+Sanity check, not its purpose — tearing up a character sheet doesn't mean
+"you won," or that the player just wasn't as clever as you.
+
 ## Outline
 
 - the rule: if this check fails, the player should still be able to

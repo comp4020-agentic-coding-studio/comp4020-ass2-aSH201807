@@ -26,6 +26,23 @@ that test, however good their backstory, is padding; the ones who pass it
 earn exactly one vivid, playable trait rather than a paragraph of
 backstory nobody at the table will ever see.
 
+Puzzles generally fall into a few kinds: object-hunting puzzles, pattern
+puzzles, wordplay puzzles, and decoding puzzles. A "hard" puzzle isn't
+automatically a "good" one — a puzzle exists to be solved, and a scenario
+isn't ranked by how difficult it is, only by whether the players got some
+enjoyment out of it. Running two or more puzzles in parallel that lead
+toward the same answer often works well: when players get stuck on one,
+they can solve another first and work backward from its result into the
+one they couldn't crack. For NPCs specifically: before placing one in a
+scenario, be clear about the role they're actually meant to play —
+guiding the players to the next scene, delivering a hidden clue, or
+acting as a pawn sent by the mastermind to mislead them — and write that
+down explicitly. A memorable NPC comes from one distinctive trait, not
+from a name and a paragraph of backstory; and NPCs talking to each other
+at length while the players just watch should be avoided — running a
+session is a story you build together with your players, not one you
+perform for yourself.
+
 ## Outline
 
 - describing effect (what a character hears, smells, senses) instead of

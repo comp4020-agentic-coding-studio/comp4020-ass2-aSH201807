@@ -1,17 +1,19 @@
 ---
 title: Idris Fenn
 description:
-  A tutor working across the course's first reviews and the practical work that
-  follows them.
+  The tutor running the weekly studios, feedback on scenario drafts, and the
+  playtest-matching that Assessment 3 depends on.
 affiliation: Slop University School of Invented Disciplines
 role: tutor
 email: idris.fenn@slop.university
-contact: Ask during sessions, or email when a question cannot wait until the next one.
-photo: ./idris-fenn.avif
-photoAlt: A stylised portrait of a person facing the viewer, flat gold and black shapes on warm cream, in a two-ink risograph print
+contact: Ask during a studio session, or email to be matched with a playtest partner before Assessment 3.
 ---
 
-<!-- STARTER_CONTENT: replace this person entry, then remove this comment. -->
+Idris runs the weekly studio sessions where scenario drafts get workshopped
+in front of the group, and keeps a standing list of students willing to
+playtest each other's work — the practical answer to "I don't have a
+regular group" for Assessment 3 (the Playtest Report).
 
-Replace this entry. A second person makes the listing, role ordering and
-teacher-reference fields visible before you replace the cast with your own.
+Office hours are for scenario-specific feedback: bring a clue web, an NPC
+roster, or a stuck point, not a general question about the brief (email
+Marisol for that).

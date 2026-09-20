@@ -2,36 +2,39 @@
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
-import heroImage from "../assets/images/hero-home.avif";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
-
-// STARTER_CONTENT: replace the hero artwork and its alt text below, then
-// remove this comment.
 ---
 
 <ContentLayout
   title={`${courseMeta.code}: ${courseMeta.title}`}
   description={courseMeta.description}
-  heroImage={heroImage}
-  heroImageAlt="A lecture theatre reduced to flat gold and black shapes, rows of seats sweeping past the frame, in a two-ink risograph print"
   {...siteConfig}
 >
   <ul class="course-tags" aria-label="Course tags">
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>
 
-  <!-- STARTER_CONTENT: replace the authored page below, then remove this comment. -->
   <h2>What you will do</h2>
   <p>
-    Say what a student spends their time on — the making, reading, arguing or
-    measuring that fills the weeks. Name the artefact they walk out with.
+    Every week you push one scenario draft further through the same
+    pipeline a working Keeper uses: a spark of interest becomes a premise,
+    the premise gets fused with a Mythos truth and antagonist, a structure
+    gets committed to, and then clues, puzzles, checks and NPCs get built
+    on top of it so the thing survives contact with a real table. You'll
+    run an actual playtest of your own draft partway through the semester
+    and revise it in response. You walk out with a complete, playtested
+    Call of Cthulhu scenario another Keeper could pick up and run cold.
   </p>
 
   <h2>Who it is for</h2>
   <p>
-    Say who this is aimed at and what they need to already know. Be specific
-    enough that someone can rule themselves in or out without emailing you.
+    You should already know how to play a tabletop RPG as a player or
+    Keeper — this course doesn't teach dice mechanics or how a session
+    runs. It doesn't require prior Mythos knowledge or a background in
+    creative writing; what it asks for is a willingness to run a real
+    playtest with real players partway through semester, using either
+    your own group or the studio's playtest-matching arrangement.
   </p>
 
   <h2>Where to go next</h2>

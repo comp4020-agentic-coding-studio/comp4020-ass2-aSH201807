@@ -1,30 +1,31 @@
 ---
-title: Opening lecture
+title: Why design, not lore
 description:
-  The first lecture — what the course is, why it is shaped this way, and what
-  happens in week 1
+  The opening lecture — why this course teaches the design process behind a
+  CoC scenario rather than Mythos trivia or system rules.
 week: 1
 date: 2027-02-22
 teachers:
   - marisol-quaye
 slides: /decks/week-01/
 related:
-  - sessions/01-getting-started
+  - sessions/01-what-is-a-scenario
 ---
 
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
-
-Replace this page. A lecture entry says what was covered and links to the pages
-that own the detail, so the lecture stays short and nothing is explained twice.
-
-The `related:` ref above is a graph edge: it renders on this page and on the
-session's, so declare a connection once, on whichever side is convenient.
-
-The page renders its `slides:` link automatically. Decks are markdown too,
-under `src/decks/`; the path is part of the lecture's API metadata.
+Call of Cthulhu is easy to teach as trivia — which Great Old One does what,
+which skill covers what — and that's exactly the course this isn't. What
+makes a scenario work at the table is a design process: five decisions,
+made roughly in order, that turn one spark of interest into something a
+group of strangers can sit down and play. This lecture sets out that
+process and where the semester's studios and assessments sit against it.
 
 ## Outline
 
-- what the course is for
-- how the weeks are shaped
-- what to do before the first session
+- why "how to write a scenario" is a different course from "how to play
+  Call of Cthulhu"
+- the five-stage pipeline: premise, truth and antagonist, structure,
+  clues and delivery, playtest and assembly
+- where this course's authority comes from: the convenor's own scenario
+  writing, checked against published Keeper-craft guidance rather than
+  replacing it
+- what the four assessments ask for, and when

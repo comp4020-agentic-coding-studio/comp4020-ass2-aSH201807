@@ -1,21 +1,24 @@
 ---
 title: Marisol Quaye
 description:
-  The founding convenor, responsible for the course's shape and its weekly
-  teaching programme.
+  The convenor, responsible for the course's design and for the scenario
+  practice it teaches.
 affiliation: Slop University School of Invented Disciplines
 role: convenor
 email: marisol.quaye@slop.university
-contact: Email for course-level questions; use the weekly session for feedback on work.
-photo: ./marisol-quaye.avif
-photoAlt: A stylised portrait of a person in three-quarter view, flat gold and black shapes on warm cream, in a two-ink risograph print
+contact: Email for course-level questions; bring feedback on your own scenario to the weekly studio instead.
 ---
 
-<!-- STARTER_CONTENT: replace this person entry, then remove this comment. -->
+Marisol has run Call of Cthulhu at the table for over a decade, mostly for
+small home groups rather than convention slots, and has been writing her own
+scenarios rather than only running published ones for most of that time.
+The course teaches that practice directly: the lecture and studio content
+comes from her own working habits — what she does when a scenario draft
+isn't working, not just what the textbooks say should work.
 
-Replace this entry. A people page carries a short bio and whatever a student
-needs in order to contact the right person for the right thing --- and nothing
-that will be stale by week 3.
+She isn't precious about it. Where her own approach differs from published
+Keeper-craft guidance (Chaosium's own guides included), the course teaches
+both and says so, rather than presenting one method as the only correct one.
 
-Consultation hours, contact preferences and the escalation path (who to ask
-first, who to ask when that does not work) are the parts students actually read.
+Consultation hours are posted at the start of each studio; email is for
+anything that can't wait until the next one.

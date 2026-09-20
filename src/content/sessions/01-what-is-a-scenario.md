@@ -23,7 +23,7 @@ die roll, and staff it with puzzles, checks and NPCs that all exist for a
 reason. Nothing else in this course is Mythos trivia — it's practice at
 making those five decisions well.
 
-Blase's scenario design guide (source #5) works the same five moves at a
+<mark class="source-mark">Blase's scenario design guide (source #5)</mark> works the same five moves at a
 finer grain — a ten-step "build a scenario from scratch" workflow he notes
 fits "on two pages of notes": pick an ordinary starting world, introduce
 one wrong thing, write the hidden truth, write an opening that gives one
@@ -53,7 +53,7 @@ Cthulhu-shaped yet — that's next week's work.
 ## In the session
 
 A worked walkthrough of the pipeline end to end, using Chaosium's own free
-introductory scenario, "The Haunting" (source #1) — neither of your
+introductory scenario, <mark class="source-mark">"The Haunting" (source #1)</mark> — neither of your
 teachers wrote it, and it's legally available to everyone in this room.
 Chaosium's own published retelling of a real playthrough is worth knowing
 about going in: the players there skip whole locations, improvise past a

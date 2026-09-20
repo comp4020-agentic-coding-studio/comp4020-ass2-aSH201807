@@ -42,8 +42,8 @@ shouldn't exist) and you have raw material to fuse with a specific
 Mythos race next week — the fusion itself is week 3's move, not this
 week's.
 
-Blase's scenario design guide (source #5) makes the same point from the
-other direction: "a situation tells you what is true, who is acting" —
+<mark class="source-mark">Blase's scenario design guide (source #5)</mark> makes the same point from the
+other direction: <mark class="source-mark">"a situation tells you what is true, who is acting"</mark> —
 not a plot, which tells you what happens in order. A premise that's
 really a situation is exactly what passes this week's test: a stranger
 can react to "what's true" without needing to be told what happens next.

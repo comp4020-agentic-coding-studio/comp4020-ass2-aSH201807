@@ -21,3 +21,15 @@
   --at-secondary: #3f6b12;
   --at-tertiary: #39512f;
 }
+
+/* Marks a phrase in prose as drawing on one of research/subject/sources.md's
+ * verified external sources — a `<mark class="source-mark">` wrapped by hand
+ * around the citing phrase in the .md content itself, not automated. Uses
+ * the theme's semantic --at-success tokens rather than a literal colour, so
+ * it already respects light/dark mode; a soft background (highlighter) plus
+ * the success green text reads clearly as "sourced" without the default
+ * `<mark>` yellow implying a search-term match instead. */
+.source-mark {
+  background: var(--at-success-soft);
+  color: var(--at-success);
+}

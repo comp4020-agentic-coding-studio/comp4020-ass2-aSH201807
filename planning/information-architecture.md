@@ -20,9 +20,9 @@ patches the resulting `aria-current` after each render so only the
 homepage itself is marked current.
 
 Materials is a single static page, not a content collection (registered in
-`courseApiCollections` the same way `policies` is) — it lists only the
-external sources the site already cites by number, so its contents are a
-byproduct of what's written elsewhere, not an independent reading list.
+`courseApiCollections` the same way `policies` is) — it lists the full set
+of verified external sources from `research/subject/sources.md`, not just
+the subset already cited by number elsewhere on the site.
 
 ## Pages and collections
 
@@ -40,8 +40,9 @@ byproduct of what's written elsewhere, not an independent reading list.
   tutor, what each owns, how and when to reach them.
 - `/policies/` — one page: late work/extensions, academic integrity, the
   Assessment 3 playtest requirement, who to ask for what.
-- `/materials/` — one page: the external sources already cited by number in
-  studios and lectures, linked back to the page that cites each one.
+- `/materials/` — one page: the full list of verified external sources the
+  course draws on, with a link back to the page that cites it wherever one
+  of them is also cited by name in a studio or lecture.
 
 ## Why this shape
 

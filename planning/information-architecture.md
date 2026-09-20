@@ -4,11 +4,25 @@ FINAL.
 
 ## Top-level navigation
 
-Home, Studios (`sessions`), Lectures, Assessment, People, Policies — six
-entries, matching the theme's existing nav slots. The `sessions` collection
-is relabelled "Studio"/"Studios" everywhere a reader sees it (`sessionLabels`
-in `src/site-config.ts`); the underlying collection, URL and API path stay
+Home, Lectures, Studios (`sessions`), Assessment, People, Policies,
+Materials — seven entries. The `sessions` collection is relabelled
+"Studio"/"Studios" everywhere a reader sees it (`sessionLabels` in
+`src/site-config.ts`); the underlying collection, URL and API path stay
 `sessions`.
+
+The theme's nav brand slot (the "Miskatonic University" wordmark) links out
+to the in-universe fan site instead of home, so an explicit "Home" entry in
+the link list is what actually gets a reader back to `/` — see
+`BrandLinkOverride.astro`. That link's `href` is `/`, which the theme's own
+active-link check can't safely distinguish from every other path once the
+site is served from a non-root base (as this one always is); `HomeLinkFix`
+patches the resulting `aria-current` after each render so only the
+homepage itself is marked current.
+
+Materials is a single static page, not a content collection (registered in
+`courseApiCollections` the same way `policies` is) — it lists only the
+external sources the site already cites by number, so its contents are a
+byproduct of what's written elsewhere, not an independent reading list.
 
 ## Pages and collections
 
@@ -26,6 +40,8 @@ in `src/site-config.ts`); the underlying collection, URL and API path stay
   tutor, what each owns, how and when to reach them.
 - `/policies/` — one page: late work/extensions, academic integrity, the
   Assessment 3 playtest requirement, who to ask for what.
+- `/materials/` — one page: the external sources already cited by number in
+  studios and lectures, linked back to the page that cites each one.
 
 ## Why this shape
 

@@ -3,6 +3,7 @@ import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import BrandLinkOverride from "../components/BrandLinkOverride.astro";
+import HomeLinkFix from "../components/HomeLinkFix.astro";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
 ---
@@ -13,6 +14,7 @@ import { sessionLabels, siteConfig } from "../site-config";
   {...siteConfig}
 >
   <BrandLinkOverride slot="head" />
+  <HomeLinkFix slot="head" />
   <ul class="course-tags" aria-label="Course tags">
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>

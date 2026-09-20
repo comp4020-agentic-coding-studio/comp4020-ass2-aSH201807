@@ -1,0 +1,30 @@
+---
+// Nav.astro's active-link check is `currentPath === resolved ||
+// (resolved !== "/" && currentPath.startsWith(resolved))`, guarded against
+// matching everything only because it assumes `withBase("/")` can equal the
+// literal string "/". This site's `base` is never "/" (see
+// scripts/pages-base.ts), so that guard never fires, and a plain
+// `{ text: "Home", href: "/" }` link ends up `aria-current="page"` --- and
+// permanently accent-coloured, see components.css --- on every page, not
+// just the homepage. There's no prop to fix this from site-config, so this
+// re-patches the attribute after each render, the same way
+// BrandLinkOverride does for the wordmark link.
+import { withBase } from "astro-theme-university/url";
+
+const homeHref = withBase("/");
+---
+
+<script define:vars={{ homeHref }}>
+  function patchHomeLink() {
+    for (const link of document.querySelectorAll(".at-nav-links a")) {
+      if (link.textContent?.trim() !== "Home") continue;
+      if (location.pathname === homeHref) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    }
+  }
+  patchHomeLink();
+  document.addEventListener("astro:page-load", patchHomeLink);
+</script>

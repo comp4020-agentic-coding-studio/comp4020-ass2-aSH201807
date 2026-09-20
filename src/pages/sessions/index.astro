@@ -1,6 +1,7 @@
 ---
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import BrandLinkOverride from "../../components/BrandLinkOverride.astro";
+import HomeLinkFix from "../../components/HomeLinkFix.astro";
 import SessionsGrid from "../../components/SessionsGrid.astro";
 import { sessionLabels, siteConfig } from "../../site-config";
 ---
@@ -11,6 +12,7 @@ import { sessionLabels, siteConfig } from "../../site-config";
   {...siteConfig}
 >
   <BrandLinkOverride slot="head" />
+  <HomeLinkFix slot="head" />
   <p>
     Each studio is a working session on your own scenario draft, building
     directly on the one before it. Bring what the "before the session" note

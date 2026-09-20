@@ -1,10 +1,12 @@
 ---
 import MdxPageLayout from "astro-theme-university/layouts/MdxPageLayout.astro";
 import BrandLinkOverride from "../components/BrandLinkOverride.astro";
+import HomeLinkFix from "../components/HomeLinkFix.astro";
 import { siteConfig } from "../site-config";
 ---
 
 <MdxPageLayout siteConfig={siteConfig} {...Astro.props}>
   <BrandLinkOverride slot="head" />
+  <HomeLinkFix slot="head" />
   <slot />
 </MdxPageLayout>

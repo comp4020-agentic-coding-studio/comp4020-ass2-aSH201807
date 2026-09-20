@@ -1,17 +1,34 @@
-/* Tentacle banner draped over the top nav bar (the bar holding the brand
- * wordmark and the Lectures/Studios/Assessment/People/Policies links).
+/* Tentacle banner (metarials/bg_b_t.png, copied to src/assets/images/ so
+ * Vite can fingerprint and base-path it) attached directly beneath the nav's
+ * link row, inside the same sticky `.at-nav` box, so the two edges meet with
+ * no gap.
  *
- * The artwork (metarials/bg_b_t.png, copied to src/assets/images/ so Vite
- * can fingerprint and base-path it) is transparent everywhere except an
- * opaque black tentacle silhouette along its top edge, so it layers as an
- * image on top of the nav's existing `--at-bg` colour rather than replacing
- * it --- light/dark mode still show through beneath the artwork. */
-/* Left unlayered (like brand.css) so it wins over the theme's own
- * `.at-nav` rule, which lives inside `@layer at.components` --- unlayered
- * styles always beat layered ones regardless of layer name or load order. */
-.at-nav {
+ * Left unlayered (like brand.css) so it wins over the theme's own rules,
+ * which live inside `@layer at.components` --- unlayered styles always beat
+ * layered ones regardless of layer name or load order.
+ *
+ * A fixed height + `background-size: cover` keeps the strip a predictable
+ * size across viewports, rather than following the source artwork's own
+ * (very wide) aspect ratio, which would make the nav unpredictably tall on
+ * wide screens. */
+:root {
+  /* Shortened link row (3.5rem-ish) + the banner strip below it. Feeds
+     scroll-padding-top and the sidebar's sticky offset (tokens.css), so it
+     needs to track the nav's real total height, not just the link row. */
+  --at-nav-height: 9rem;
+}
+
+.at-nav-inner {
+  padding-block: var(--at-spacing-sm);
+}
+
+.at-nav::after {
+  content: "";
+  display: block;
+  grid-column: full;
+  height: 6rem;
   background-image: url("../assets/images/nav-banner.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 100% auto;
+  background-size: cover;
 }

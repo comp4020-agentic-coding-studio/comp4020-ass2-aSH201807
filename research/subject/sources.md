@@ -9,6 +9,17 @@ have now been individually verified** (2026-09-13: link resolves, author/venue
 real, content matches the description — see per-row notes for corrections).
 Verified ≠ read-and-synthesized yet — that's still `notes.md`'s job.
 
+## Primary — author's own experience
+
+| # | Title | Author | Link | Status |
+|---|-------|--------|------|--------|
+| 14 | "从零开始写COC TRPG模组" (personal column/video-script notes, 5 sections: inspiration & structure, clues, puzzles, checks, NPCs) | Me (course author) | local file, `research/subject/personal-notes-raw.txt` | primary — my own GM/scenario-writing experience, not a third-party source to verify. Informal column voice ("以我个人经验为准，如有冲突请以你自己的想法为准"), written before this course existed, now repurposed as course content input. |
+
+This is the backbone for weeks 2–9 of the curriculum (see
+`research/subject/notes.md` for the week-by-week mapping) — richer and more
+opinionated than the secondary sources below, which now serve as
+cross-checks/second-perspectives rather than the primary voice.
+
 ## Official / primary rules & guidance
 
 | # | Title | Author/Publisher | Link | Status |
@@ -25,6 +36,10 @@ Verified ≠ read-and-synthesized yet — that's still `notes.md`'s job.
 | 5 | Call of Cthulhu 7e Scenario Design Guide | Andrew Blase, The Role Players Guild | https://theroleplayersguild.com/articles/coc-7e/keeper-resources/scenario-design | verified — richer than expected: hidden-truth six-question framework, layered mysteries, clue webs (core/supporting/advantage), antagonist timelines, 10-step build process |
 | 6 | Call of Cthulhu 7e Keeper Resources Guide | The Role Players Guild | https://theroleplayersguild.com/articles/coc-7e/keeper-resources | verified — hub page, links to guide 5 plus NPC/horror/pacing guides |
 | | Node-based scenario design / redundant clue webs (concept, not a single cited source) | The Alexandrian (general body of work) | — | see #5 — its own "Choose a Scenario Structure" and "Design a Redundant Clue Web" sections already cover this (see `research/subject/reading-notes/blase-rpg.md`); leaving this row open in case a dedicated Alexandrian article is still worth finding for a second perspective |
+| 10 | How to Run Call of Cthulhu 7e | Andrew Blase, The Role Players Guild | https://theroleplayersguild.com/articles/coc-7e/keeper-resources/running-coc-guide | unverified — candidate, surfaced 2026-09-14 via #6's "Keeper Resources Guide Library" table; not yet independently checked (link/author/content) |
+| 11 | NPC Creation Guide (CoC 7e) | Andrew Blase, The Role Players Guild | https://theroleplayersguild.com/articles/coc-7e/keeper-resources/npc-creation | skipped for now — WebFetch repeatedly errors on this URL (`[bio]` error, 3 attempts with different prompts) and it isn't fetchable via web.archive.org either (tool doesn't support that domain); web search only surfaces one incidental quote from a sibling article citing it, not the article's own text. Set aside 2026-09-14, not abandoned permanently — revisit if a way to access it turns up. |
+| 12 | Horror Atmosphere Guide (CoC 7e) | Andrew Blase, The Role Players Guild | https://theroleplayersguild.com/articles/coc-7e/keeper-resources/horror-atmosphere | unverified — candidate, surfaced 2026-09-14 via #6's "Keeper Resources Guide Library" table; not yet independently checked |
+| 13 | Campaign Pacing Guide (CoC 7e) | Andrew Blase, The Role Players Guild | https://theroleplayersguild.com/articles/coc-7e/keeper-resources/campaign-pacing | unverified — candidate, surfaced 2026-09-14 via #6's "Keeper Resources Guide Library" table; not yet independently checked |
 
 ## Academic / scholarly
 

@@ -20,7 +20,7 @@ that idea with pacing: a threat that can kill a player character with no
 warning isn't tense, it's arbitrary — escalation only reads as escalation
 if the players had a chance to notice it coming.
 
-Andrew Blase's horror-atmosphere guide (source #12) argues the "reveal"
+<mark class="source-mark">Andrew Blase's horror-atmosphere guide (source #12)</mark> argues the "reveal"
 should show effects before causes: an impossible injury, an altered room,
 missing time — not the creature's full biology or its name. A name only
 earns its place if learning it "changes what the group can do." The same
@@ -33,8 +33,8 @@ naming, ask which stage the scene is actually in, and whether the next
 scene earns the next stage up rather than jumping straight to
 confrontation.
 
-For the timeline check specifically, Sandy Petersen's "Creepy Stuff Rule"
-(via Alexander's write-up, source #4) is the sharper version of this
+For the timeline check specifically, <mark class="source-mark">Sandy Petersen's "Creepy Stuff Rule"
+(via Alexander's write-up, source #4)</mark> is the sharper version of this
 week's second spec point: players need three escalating warnings — a
 hint, a clear indication of danger, then the monster itself — before a
 threat is allowed to actually hurt someone, precisely so that harm reads

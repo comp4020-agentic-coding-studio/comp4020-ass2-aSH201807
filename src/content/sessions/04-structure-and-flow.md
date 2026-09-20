@@ -22,7 +22,7 @@ and more improvisation to hold together). Neither choice is more advanced
 than the other — they suit different session lengths and different
 groups.
 
-Blase (source #5) argues the antagonist "should act while investigators
+<mark class="source-mark">Blase (source #5)</mark> argues the antagonist "should act while investigators
 investigate" rather than sit still waiting to be found, via an active
 timeline of three to five escalating stages tied to visible signals — a
 locked office or a frightened contact, then more guards or a

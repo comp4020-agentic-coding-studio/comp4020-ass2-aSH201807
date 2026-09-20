@@ -17,7 +17,7 @@ short scenario can run on as few as three or four scenes as long as each
 one earns its place — a location that provides no new information and no
 new pressure is decoration, not a scene.
 
-Blase's scenario design guide (source #5) breaks a location that "changes
+<mark class="source-mark">Blase's scenario design guide (source #5)</mark> breaks a location that "changes
 play" into five parts, which is a stricter version of the card format
 this studio uses: **immediate impression** (what an investigator notices
 on arrival), **question** (what can actually be learned or accomplished

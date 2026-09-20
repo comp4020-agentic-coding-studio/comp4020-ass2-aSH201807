@@ -22,7 +22,7 @@ race, or a personal object fused with a specific Great Old One's cult, are
 both the same move: borrow the unfamiliar half from the Mythos, keep the
 familiar half from your own premise.
 
-Blase's scenario design guide (source #5) frames this as starting from a
+<mark class="source-mark">Blase's scenario design guide (source #5)</mark> frames this as starting from a
 **question**, not a plot: "Which Outer God is behind this?" is too
 Mythos-forward to build a truth on, but "why did the astronomer destroy
 their own telescope?" is concrete enough to answer. If your premise

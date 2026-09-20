@@ -15,6 +15,16 @@ There's more than one useful way to think about a clue, and this course
 teaches two of them side by side rather than picking a winner. This
 lecture introduces both before the studio applies them to your own draft.
 
+Delivery format isn't just flavour — each one carries a different
+practical risk. A literature clue, once a character starts looking, is
+close to a guaranteed find, which makes it the right place for your
+broadest, most load-bearing information rather than your best reveal. A
+social clue that's hard-locked to a single NPC breaks the moment players
+don't happen to talk to that NPC, so write it as something several NPCs
+could plausibly say instead. And a trace clue — a footprint, a smell, a
+scratch mark — is often the cheapest way to make a threat felt without
+staging a full encounter with it.
+
 ## Outline
 
 - function: does a clue guide players toward the next scene, or reveal

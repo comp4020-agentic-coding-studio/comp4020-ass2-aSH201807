@@ -16,6 +16,14 @@ making deliberately rather than by default. This lecture lays out the
 trade-off in plain terms and connects it back to what a truth from week 3
 actually needs.
 
+A structure built purely around the throughline that advances the truth
+tends to under-serve any player who isn't the one pulling levers on that
+throughline. It's usually worth adding at least one scene that exists for
+no other reason than to give a different kind of character something to
+do — a scene built around a conversation rather than a lock, say, so a
+player who invested in social skills gets a moment where that investment
+matters, not just a spectator's view of everyone else's clues.
+
 ## Outline
 
 - linear structure: easier to run and to prep, less tolerant of player

@@ -16,6 +16,14 @@ You don't need to have read the Mythos canon to use it well. Most of what
 makes a scene feel Lovecraftian reduces to four moves, and this lecture
 names them so the studio can use them on purpose instead of by accident.
 
+A real story is rarely usable as a premise wholesale — what actually
+transplants cleanly is a small set of extractable pieces: a specific
+setting, an actor, a method, and an object. Strip a news story or an urban
+legend down to those four and you're left with raw material that fuses
+onto almost any Mythos race without a seam, because you've kept only what
+made the original story specific and discarded whatever explained it in
+non-Mythos terms.
+
 ## Outline
 
 - the four flavours: ancient, unknown, chaos, space — what each one does to

@@ -19,6 +19,16 @@ made roughly in order, that turn one spark of interest into something a
 group of strangers can sit down and play. This lecture sets out that
 process and where the semester's studios and assessments sit against it.
 
+Before any of the five stages, there's a decision this course only asks you
+to make once: what kind of scenario is this actually going to be? A
+straight Call of Cthulhu scenario draws its entities and stakes from the
+Mythos itself; a fan-fusion instead borrows another setting's own
+factions, creatures or tone and runs them through Call of Cthulhu's rules
+and skill list — using the ruleset without importing its default cosmology
+wholesale. Neither option is more legitimate than the other, but settling
+it before you go looking for a spark saves you from falling for an idea
+that turns out not to fit the ruleset you'd already picked.
+
 ## Outline
 
 - why "how to write a scenario" is a different course from "how to play

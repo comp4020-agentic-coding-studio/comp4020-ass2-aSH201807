@@ -16,6 +16,15 @@ Keeper set for themselves, not a test of the player. This lecture sets
 out a simple rule for every check in a scenario, and applies it to Sanity
 specifically, where it's most often gotten wrong.
 
+How many rolls a scenario calls for isn't a number worth optimising for
+its own sake — it's a taste your table has an opinion about. Some players
+enjoy the swing of an uncertain roll and would rather more of the scenario
+ride on the dice; others find that same uncertainty deflating and would
+rather earn information through choices they can see coming. Neither
+preference is wrong, but a Keeper who knows which one their table leans
+toward can dial the whole scenario's roll density up or down accordingly,
+rather than applying one default to every group.
+
 ## Outline
 
 - the rule: if this check fails, the player should still be able to

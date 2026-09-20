@@ -21,6 +21,33 @@ ritual) and *space* (cosmic origin, indifference at planetary scale). You
 don't need deep lore to use them — you need to know which one your idea
 already leans toward.
 
+There are two honest ways to arrive at a spark, and both work. One is
+picking a specific creature or entity you already find interesting, then
+building outward from it — not "the Mythos" in general, but one thing
+specific enough to research. Ithaqua is a workable example: he's bound to
+the Arctic Circle, which is enough on its own to set a scenario in the
+Canadian Northwest in late autumn, drawing on the same premise August
+Derleth used for a research team attacked and a member abducted in that
+setting. Texture matters here too — an ancient-looking hand-lettered
+parchment reads as more unsettling than an identical warning printed on
+plain A4, even though nothing about the actual content changed; *ancient*
+is partly a claim about the object's history, not just the entity's age.
+The other way in is starting from something in your own life — a news
+story, an unresolved case, an object that kept you up — and only then
+looking for a Mythos element that fits it. A real conspiracy-theory story
+like the "Dulce Base" accounts is a usable example of this path: strip it
+down to its extractable pieces (a hidden base, something inhuman
+underground, an unnatural weapon, human experimentation, tunnels that
+shouldn't exist) and you have raw material to fuse with a specific
+Mythos race next week — the fusion itself is week 3's move, not this
+week's.
+
+Blase's scenario design guide (source #5) makes the same point from the
+other direction: "a situation tells you what is true, who is acting" —
+not a plot, which tells you what happens in order. A premise that's
+really a situation is exactly what passes this week's test: a stranger
+can react to "what's true" without needing to be told what happens next.
+
 ## Before the session
 
 Reread the idea from your notebook. Ask where it came from: a piece of

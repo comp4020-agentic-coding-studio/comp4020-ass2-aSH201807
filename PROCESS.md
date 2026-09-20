@@ -156,6 +156,20 @@ after. Weeks 1, 2, 11 and 12 were left alone: 1 and 2 are orientation/premise
 weeks already reasonably dense, and 11–12 are playtest/assembly logistics
 where forcing in a literature citation would be padding, not substance.
 
+### Regenerating weeks 1 and 2
+
+On a further pass I did go back into weeks 1 and 2 after all, combining
+source #14's own worked examples (the Ithaqua/Canadian-Northwest setup,
+the old-parchment-vs-A4 texture contrast, the "Dulce Base" conspiracy
+story as a daily-life inspiration source) with two cited literature
+cross-checks: Blase's ten-step "build a scenario from scratch" workflow
+and his "situation, not a plot" framing (source #5), and Chaosium's own
+free quick-start scenario "The Haunting," including its published
+actual-play retelling showing real players skipping and reordering
+content (source #1) — used as week 1's worked walkthrough example instead
+of an unnamed scenario. Both #1 and #5 were already `verified` before this
+pass.
+
 ## Before you ship
 
 `pnpm check:evidence` verifies that the starter's template comment and

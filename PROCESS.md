@@ -7,10 +7,18 @@ the log below follows that same order.
 
 ## What I built
 
-Not yet locked in — `planning/course-concept.md` is still a draft. Once the
-course concept, curriculum, and assessment design are finalized this section
-becomes the one-paragraph summary of the finished course and the idea behind
-it.
+`SLOP1439: How to Write a Call of Cthulhu Scenario` — a twelve-week studio
+course in scenario design, not Mythos trivia or system rules. Each week
+pushes one student-authored scenario draft through the same five-stage
+pipeline a working Keeper uses: premise, truth and antagonist, structure,
+clue/puzzle/check/NPC design, then a real playtest and final assembly.
+The course's authority comes from my own decade of running and writing CoC
+scenarios, cross-checked against Chaosium's and other published
+Keeper-craft guidance rather than replacing it — where the two disagree
+(week 6's clue taxonomy, most visibly), the course teaches both. Four
+assessments track the same arc: a pitch, a full investigation
+architecture, a report on an actual playtest with a real player, and the
+finished, playtest-revised scenario.
 
 ## How I got here
 
@@ -57,12 +65,17 @@ to commit to without spending a day scoring alternatives. The main risk this
 accepts: I haven't stress-tested that the runner-up wasn't actually better,
 only that this one clears the bar.
 
-Worth being explicit about: I haven't written or run a CoC scenario myself.
-The interest is in the subject as a design problem, not first-hand Keeper
-experience. That means the course's authority has to come from the sources
-in `research/subject/`, read and synthesized honestly, rather than from
-personal practice I don't have — a different (and in some ways harder)
-position to design a course from than if I'd actually run these at a table.
+Worth being explicit about: I've actually run and written Call of Cthulhu
+scenarios myself, for small home groups, for over a decade. Source #14 in
+`research/subject/sources.md` is my own column-style notes on that
+practice, added once I'd already built the source list below from
+literature — it turned out to map almost exactly onto the 12-week
+structure I'd drafted from secondary sources, which is why it became the
+course's primary spine rather than a late addition bolted on top. The
+published sources stay in the course as cross-checks and second
+perspectives, not as the primary voice, and anywhere my own approach
+differs from theirs (clue taxonomy, week 6, in particular) the course
+teaches both and says so rather than picking a winner.
 
 ### Phase 2 — Literature search
 
@@ -74,12 +87,43 @@ individually checked that the link resolves and the author/venue/content
 match what's claimed, rather than trusting an AI-assisted search at face
 value. All 9 entries verified 2026-09-13; one author attribution needed
 correcting (a paper credited in shorthand to a single author actually has
-seven). Reading and synthesizing each source into `research/subject/notes.md`
-is the remaining Phase 2 work — an entry gets added here once that's done.
+seven).
+
+### Phases 3–6 — Course philosophy, curriculum, assessments, IA
+
+With about a day left before the deadline, I made an explicit call with my
+agent collaborator rather than silently either blowing through my own
+process gate or missing the deadline trying to honour it fully: keep the
+real playtest requirement in Assessment 3 (the honest, harder version of
+the assessment, not the easier one), and fast-track-finalize
+`course-concept.md`, `curriculum.md` and `assessments.md` from the
+existing v0 drafts plus my own source-#14 notes, rather than running a
+separate formal course-design/pedagogy research pass. `notes.md` records
+the week-by-week mapping from source #14's five sections onto weeks 2-9;
+the three planning docs and `information-architecture.md` were finalized
+directly from that mapping and the existing v0 structure it validated —
+[`e222aaa`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-aSH201807/commit/e222aaa).
+
+### Phases 7–11 — Site content, human review, final QA
+
+With the planning docs FINAL, built the actual site: 12 dated studio
+pages, 6 lectures with one real deck, 4 assessment briefs, both people
+pages, home and policies pages, and the four builder-facing index pages
+rewritten for students rather than site-builders —
+[`901dd2b`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-aSH201807/commit/901dd2b).
+The four starter images (`card.png`, `hero-home.avif`, and both people
+photos) are deleted rather than replaced with placeholder art of my own;
+the theme falls back cleanly to a title-only hero and image-free people
+cards, which is an honest design choice given the time available rather
+than a gap. `pnpm check` is green: 0 build errors, the axe accessibility
+audit passes across all 32 pages, no broken internal links, the one deck
+compiles, and all 5 spec/data-integrity tests pass.
 
 ## Before you ship
 
-`pnpm check:evidence` verifies that the starter's template comment is gone,
-that citations resolve to real commits, that a crit week's reflection entry
-is in `reflections/`, and that `CLAUDE.md` is there. It checks that the
-account is traceable, not that it's good — that's the marker's call.
+`pnpm check:evidence` verifies that the starter's template comment and
+`STARTER_CONTENT` markers are gone, that the four starter images have been
+replaced or removed, that citations resolve to real commits, and that
+`CLAUDE.md` is there. This repo carries no `reflections/` requirement — an
+assignment's written account is this file. The check verifies the account
+is traceable, not that it's good — that's the marker's call.

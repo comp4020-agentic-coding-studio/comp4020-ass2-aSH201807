@@ -29,7 +29,23 @@
   --at-nav-height: 12rem;
 }
 
+/* The theme boxes the nav row into the same centred `content` column as
+ * article text (max `--at-content-width`, 48rem), so on a maximised wide
+ * window the brand and links sit huddled in the middle with large empty
+ * margins on both sides --- inconsistent with the banner strip right below
+ * it, which already spans edge to edge via `grid-column: full`. Matching
+ * that here pins the logo to the true left edge and (via the links'
+ * existing `margin-inline-start: auto` in components.css) the links/search/
+ * theme toggle to the true right edge, at every window width, instead of
+ * both drifting toward the centre as the window widens.
+ *
+ * The theme also nudges the brand left by `--at-content-inset` on desktop
+ * to align it with the `content` column's edge --- meaningless once the row
+ * is full-bleed, and left in place it would shift the logo past our own
+ * `--at-gutter` padding, overhanging the edge. Cancelled below. */
 .at-nav-inner {
+  grid-column: full;
+  padding-inline: var(--at-gutter);
   padding-block: var(--at-spacing-sm);
 }
 
@@ -41,6 +57,10 @@
 @media (width >= 640px) {
   .at-nav-inner {
     flex-wrap: nowrap;
+  }
+
+  .at-nav-brand {
+    transform: none;
   }
 }
 

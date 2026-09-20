@@ -11,16 +11,22 @@
  * than a fixed height + `background-size: cover`: cover crops the image to
  * fill a box whose aspect ratio doesn't match the source, and since `full`
  * spans the entire (uncapped) viewport width, that crop got more severe the
- * wider the window --- exactly the "tentacles get cut off once the window is
- * maximised" bug. `max-height` bounds how tall the strip gets on very wide
- * monitors; past that width `background-size: contain` centres the artwork
- * instead of cropping it, so nothing is ever clipped. */
+ * wider the window --- the "tentacles get cut off once the window is
+ * maximised" bug. Capping the strip's height (an earlier version of this
+ * rule did, via `max-height` + `background-size: contain`) trades that crop
+ * for empty margins on wide screens instead --- also wrong, since the
+ * artwork is meant to span edge to edge. So the height is left to track the
+ * aspect ratio with no cap: `background-size: 100% 100%` always fills the
+ * full width without cropping or stretching, because the box's own aspect
+ * ratio matches the image exactly; the strip is simply taller on wider
+ * windows. */
 :root {
-  /* Shortened link row (3.5rem-ish) + the banner strip below it, sized at
-     its max-height. Feeds scroll-padding-top and the sidebar's sticky
-     offset (tokens.css), so it needs to track the nav's real total height,
-     not just the link row. */
-  --at-nav-height: 11rem;
+  /* Shortened link row (3.5rem-ish) + the banner strip below it. The strip's
+     real height now scales with viewport width (aspect-ratio 2560:338), so
+     this is a rough estimate for a common desktop width, not an exact
+     figure --- it only feeds scroll-padding-top and the sidebar's sticky
+     offset (tokens.css), where being close is enough. */
+  --at-nav-height: 12rem;
 }
 
 .at-nav-inner {
@@ -43,11 +49,10 @@
   display: block;
   grid-column: full;
   aspect-ratio: 2560 / 338;
-  max-height: 8rem;
   background-image: url("../assets/images/nav-banner.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: contain;
+  background-size: 100% 100%;
 }
 
 /* Miskatonic crest, added next to the text wordmark rather than replacing

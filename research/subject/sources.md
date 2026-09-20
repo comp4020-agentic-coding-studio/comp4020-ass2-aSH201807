@@ -49,14 +49,17 @@ cross-checks/second-perspectives rather than the primary voice.
 | 8 | Tabletop Roleplaying Games as Procedural Content Generators | **Guzdial, Acharya, Kreminski, Cook, Eladhari, Liapis, Sullivan** (7 authors — corrected from "Guzdial et al." shorthand) | FDG '20 — https://doi.org/10.1145/3402942.3409605 (arXiv:2007.06108 has a free PDF) | verified |
 | 9 | Dread Trident: Tabletop Role-Playing Games and the Modern Fantastic — ch. 5 "Lovecraft's (Cthulhu) Mythos" | Curtis D. Carbonell | Liverpool University Press, 2019 — https://academic.oup.com/liverpool-scholarship-online/book/34021/chapter-abstract/288927075 (DOI 10.3828/liverpool/9781789620573.003.0005) | verified — abstract/structure visible, full text paywalled |
 
-## Why this topic (no hands-on CoC-writing experience — and that's fine)
+## Why this topic
 
-I haven't written or run a CoC scenario myself. The interest is in the
-subject as a design problem I find compelling, not personal expertise being
-showcased. This means the course's authority has to come from the sources
-above (and PROCESS.md should say this plainly, not imply first-hand Keeper
-experience that isn't there) — see `PROCESS.md`'s Phase 1 entry.
+I've actually written and run CoC scenarios myself, for small home groups,
+for over a decade — source #14 above is my own notes on that practice. This
+paragraph originally said the opposite (written before I'd added #14 to the
+list); it was wrong, and `PROCESS.md`'s Phase 1 entry has the corrected
+version. The published sources (#1–13) stay in the course as cross-checks
+and second perspectives, not as the primary voice — and where my own
+approach differs from theirs (week 6's clue taxonomy, most visibly), the
+course teaches both rather than picking a winner.
 
-**Next action on this file:** sources are verified; the remaining work is
-reading and synthesizing each into `notes.md` (source → key idea → what I
-actually think → implication for the course → harness rule, if any).
+**Next action on this file:** sources are verified and #14 is synthesized in
+`notes.md`; remaining work is finishing synthesis for any secondary source
+not yet written up there.

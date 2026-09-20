@@ -1,0 +1,17 @@
+/* Tentacle banner draped over the top nav bar (the bar holding the brand
+ * wordmark and the Lectures/Studios/Assessment/People/Policies links).
+ *
+ * The artwork (metarials/bg_b_t.png, copied to src/assets/images/ so Vite
+ * can fingerprint and base-path it) is transparent everywhere except an
+ * opaque black tentacle silhouette along its top edge, so it layers as an
+ * image on top of the nav's existing `--at-bg` colour rather than replacing
+ * it --- light/dark mode still show through beneath the artwork. */
+/* Left unlayered (like brand.css) so it wins over the theme's own
+ * `.at-nav` rule, which lives inside `@layer at.components` --- unlayered
+ * styles always beat layered ones regardless of layer name or load order. */
+.at-nav {
+  background-image: url("../assets/images/nav-banner.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+}

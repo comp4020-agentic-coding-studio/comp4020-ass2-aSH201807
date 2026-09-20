@@ -23,7 +23,8 @@ export default defineConfig({
       // The whole brand choice: three colour tokens and a set of lockups. Keep
       // institutional brand packages and assets out of this fictional site.
       // Palette references https://www.cthulhuclub.com/ --- see src/styles/brand.css.
-      brandCss: "/src/styles/brand.css",
+      // nav-banner.css layers the tentacle artwork over the top nav bar.
+      brandCss: ["/src/styles/brand.css", "/src/styles/nav-banner.css"],
       imageFormat: "avif",
       llmsTxt: true,
       // The theme owns the markdown plugin chain, so astromotion's slide

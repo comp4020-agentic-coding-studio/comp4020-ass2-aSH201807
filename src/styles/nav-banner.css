@@ -7,28 +7,68 @@
  * which live inside `@layer at.components` --- unlayered styles always beat
  * layered ones regardless of layer name or load order.
  *
- * A fixed height + `background-size: cover` keeps the strip a predictable
- * size across viewports, rather than following the source artwork's own
- * (very wide) aspect ratio, which would make the nav unpredictably tall on
- * wide screens. */
+ * The strip is sized by the artwork's own aspect ratio (2560x338) rather
+ * than a fixed height + `background-size: cover`: cover crops the image to
+ * fill a box whose aspect ratio doesn't match the source, and since `full`
+ * spans the entire (uncapped) viewport width, that crop got more severe the
+ * wider the window --- exactly the "tentacles get cut off once the window is
+ * maximised" bug. `max-height` bounds how tall the strip gets on very wide
+ * monitors; past that width `background-size: contain` centres the artwork
+ * instead of cropping it, so nothing is ever clipped. */
 :root {
-  /* Shortened link row (3.5rem-ish) + the banner strip below it. Feeds
-     scroll-padding-top and the sidebar's sticky offset (tokens.css), so it
-     needs to track the nav's real total height, not just the link row. */
-  --at-nav-height: 9rem;
+  /* Shortened link row (3.5rem-ish) + the banner strip below it, sized at
+     its max-height. Feeds scroll-padding-top and the sidebar's sticky
+     offset (tokens.css), so it needs to track the nav's real total height,
+     not just the link row. */
+  --at-nav-height: 11rem;
 }
 
 .at-nav-inner {
   padding-block: var(--at-spacing-sm);
 }
 
+/* The nav's own flex row wraps by default, which drops the search button
+   (and, with a long enough link list, the links themselves) onto a second
+   line at in-between widths. Above the mobile breakpoint the link list
+   already handles overflow itself (horizontal scroll with a fade, see
+   components.css), so nothing else needs to wrap. */
+@media (width >= 640px) {
+  .at-nav-inner {
+    flex-wrap: nowrap;
+  }
+}
+
 .at-nav::after {
   content: "";
   display: block;
   grid-column: full;
-  height: 6rem;
+  aspect-ratio: 2560 / 338;
+  max-height: 8rem;
   background-image: url("../assets/images/nav-banner.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: contain;
+}
+
+/* Miskatonic crest, added next to the text wordmark rather than replacing
+   it (the theme's `logo` prop swaps the wordmark out entirely, which isn't
+   what was wanted here). The source PNG is an opaque white disc holding
+   black line art, so it reads correctly on both the light and dark
+   background --- no extra backing chip needed. */
+.at-nav-wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--at-spacing-xs);
+}
+
+.at-nav-wordmark::before {
+  content: "";
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  background-image: url("../assets/images/misc-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }

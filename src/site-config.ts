@@ -1,5 +1,6 @@
 import { defineSiteConfig } from "astro-theme-university/types";
 import { slopBranding } from "astro-theme-slop";
+import favicon from "./assets/images/misc-logo.png";
 
 // The underlying collection and URL remain `sessions`; these labels are the
 // language students see. "Studio" is the weekly hands-on scenario-writing
@@ -30,6 +31,10 @@ export const siteConfig = defineSiteConfig({
   logo: undefined,
   logoDark: undefined,
   logoCompact: undefined,
+  // slopBranding's own favicon is the generic Slop crest — swap it for the
+  // Miskatonic seal already used in the nav (misc-logo.png) so the browser
+  // tab/bookmark icon matches this site's actual branding instead.
+  favicon,
 
   links: [
     { text: "Home", href: "/" },

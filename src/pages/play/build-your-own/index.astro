@@ -1,0 +1,101 @@
+---
+import Card from "astro-theme-university/components/Card.astro";
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
+import BrandLinkOverride from "../../../components/BrandLinkOverride.astro";
+import HomeLinkFix from "../../../components/HomeLinkFix.astro";
+import "../../../styles/play.css";
+import { siteConfig } from "../../../site-config";
+---
+
+<ContentLayout
+  title="Build your own"
+  description="Into Blackwater Cove isn't hard-coded — it's just files in a content collection. Here's how to point the same two pages at your own scenario."
+  {...siteConfig}
+>
+  <BrandLinkOverride slot="head" />
+  <HomeLinkFix slot="head" />
+  <div class="play-page">
+  <p>
+    The <a href={withBase("/play/scenario/")}>branching scenario</a> and the
+    <a href={withBase("/play/clue-web/")}>clue web</a> are both generated from
+    the same collection of scene files — nothing about either page names
+    Blackwater Cove specifically. Swap in your own scenes and both views
+    follow, which makes this a working preview of your
+    <a href={withBase("/assessments/final-scenario/")}
+      >Final Scenario</a
+    > submission, not just a demo to read past.
+  </p>
+
+  <h2>One file per scene</h2>
+  <p>
+    Each scene is a Markdown file under <code>src/content/play/scenario/</code>,
+    frontmatter plus prose ending in a choice list. This is the whole schema:
+  </p>
+  <pre><code>title: string, required
+start: true on exactly one scene — where scenario/index.astro sends readers
+ending: "success" | "failure" | "ambiguous" — set only on a terminal scene
+clues: a list of &#123; id, name, redundancy, delivery &#125;
+  redundancy: "core" | "supporting" | "advantage"
+  delivery:   "literature" | "social" | "trace"</code></pre>
+  <p>
+    <code>redundancy</code> and <code>delivery</code> are the same two
+    taxonomies from <a href={withBase("/sessions/06-clue-architecture/")}>Studio 6</a>.
+    A clue <code>id</code> that recurs across two scenes is exactly the
+    redundant path the <a href={withBase("/assessments/investigation-architecture/")}
+      >Investigation Architecture</a
+    > brief asks for — the clue web groups by that same <code>id</code>, so a
+    redundant clue shows up once with both scenes linked underneath it.
+  </p>
+
+  <h2>A scene, stripped down</h2>
+  <pre><code>---
+title: The Locked Cellar
+clues:
+  - id: workshop-key
+    name: "The spare workshop key"
+    redundancy: core
+    delivery: trace
+---
+
+Two or three paragraphs of scene prose, ending on a choice.
+
+**What do you do?**
+
+- [Force the cellar door](/play/scenario/force-the-door/)
+- [Go back upstairs instead](/play/scenario/upstairs/)</code></pre>
+  <p>
+    A terminal scene drops the choice list and <code>clues</code>, and adds
+    <code>ending: success</code> (or <code>failure</code> /
+    <code>ambiguous</code>) instead.
+  </p>
+
+  <h2>Trying it yourself</h2>
+  <ol>
+    <li>Clone this repository and run <code>pnpm dev</code>.</li>
+    <li>
+      Read a couple of the existing files under
+      <code>src/content/play/scenario/</code> as worked examples, then start
+      replacing them with your own scenes — same folder, same schema.
+    </li>
+    <li>Mark exactly one scene <code>start: true</code>.</li>
+    <li>
+      Every choice link is an ordinary Markdown link to another scene's slug
+      — the build's broken-link checker will flag a typo before it ships.
+    </li>
+    <li>
+      Run <code>pnpm check</code>. It typechecks the frontmatter against this
+      schema, rebuilds both pages from your scenes, and re-checks links and
+      accessibility.
+    </li>
+  </ol>
+  <p>
+    None of this touches the graded assessment collections or the fixed
+    course spec — <code>playScenes</code> is its own collection, kept out of
+    both, so experimenting here can't put a real submission at risk.
+  </p>
+  <Card title="See it working first" href="/play/scenario/">
+    <p>Play Into Blackwater Cove, or check its clue web, before starting your own.</p>
+  </Card>
+  </div>
+</ContentLayout>

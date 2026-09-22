@@ -28,21 +28,19 @@ red-to-green target —
 ## Revisiting the research-discipline rule mid-review
 
 `CLAUDE.md`'s original rule said only a synthesized `notes.md` entry, never
-a raw source, could feed content — written to stop a generic,
-unearned-sounding course coming out of material an agent is just handed. A
-real concern for the third-party literature (#1–13), but it over-applied to
-source #14: there's no copyright or "unearned authority" issue with drawing
-on my own writing. On review, the studio pages read thinner than the source
-material actually supported, so I amended the rule to exempt source #14
-outright, and reworked weeks 1–10 to draw on it directly.
+a raw source, could feed content — meant to stop a generic,
+unearned-sounding course. A real concern for the third-party literature
+(#1–13), but it over-applied to source #14, my own writing, where no
+copyright or "unearned authority" issue exists. On review, the studio
+pages read thinner than the source supported, so I exempted source #14
+outright and reworked weeks 1–10 to draw on it directly.
 
-That exemption still only allowed paraphrase into the course's own voice,
-not verbatim copying — a leftover from treating it like third-party
-literature. A second review found the paraphrased lecture paragraphs still
-read thinner than my original notes, so I amended the rule again: since
-it's my own writing, translation is all that's needed, not paraphrase. I
-redid the source-#14 paragraphs across six lectures as literal translations
-of the specific passages they draw on —
+That exemption still barred verbatim copying — a leftover from treating
+it like third-party literature. A second review found the paraphrased
+lecture paragraphs still read thin, so I amended the rule again: since
+it's my own writing, translation suffices, not paraphrase. I redid the
+source-#14 paragraphs across six lectures as literal translations of the
+passages they draw on —
 [`7070e5e`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-aSH201807/commit/7070e5e).
 
 At that point, publishing the whole document made more sense than
@@ -74,4 +72,7 @@ requirement.
 A `/play/` section was added since: an original demo scenario (not
 source #14) as branching pages, plus a clue-web explorer tagging its
 clues against week 6's taxonomies — outside the graded collections and
-fixed spec assertions.
+fixed spec assertions. A `/play/build-your-own/` guide followed,
+documenting that same `playScenes` schema so a student could reuse the
+mechanism for their own Final Scenario instead of treating the demo as
+fixed.

@@ -41,4 +41,5 @@ up and run it without you in the room. Include a short note naming at
 least one specific change you made because of your playtest.
 
 For a worked example of what a finished packet feels like at the table,
-see the [Play](/play/) demo scenario.
+see the [Play](/play/) demo scenario — or go straight to
+[building your own](/play/build-your-own/) from this submission.

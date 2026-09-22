@@ -1,0 +1,32 @@
+/* Atmosphere for the /play/ section only. An original demo scenario reads
+ * better in something closer to pulp-horror typesetting than the course
+ * site's default sans-serif, so each play/*.astro page imports this
+ * directly in its own frontmatter (unlike brand.css/nav-banner.css, this
+ * is never added to astro.config.ts's site-wide brandCss).
+ *
+ * Only font-family/letter-spacing change here — text and background
+ * colours stay on the theme's own tokens throughout, so the site's
+ * verified contrast ratios aren't put at risk by a decorative typeface.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Metamorphous&family=IM+Fell+English:ital@0;1&display=swap");
+
+.play-page {
+  --play-heading-font: "Metamorphous", Georgia, serif;
+  --play-body-font: "IM Fell English", Georgia, serif;
+
+  font-family: var(--play-body-font);
+  font-size: 1.05em;
+}
+
+.play-page :is(h2, h3, summary) {
+  font-family: var(--play-heading-font);
+  letter-spacing: 0.03em;
+}
+
+/* This file is only imported by pages under src/pages/play/, so styling
+ * .at-hero-title unconditionally here can't leak into the rest of the site.
+ */
+.at-hero-title {
+  font-family: "Metamorphous", Georgia, serif;
+  letter-spacing: 0.04em;
+}

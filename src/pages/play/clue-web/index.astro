@@ -2,8 +2,10 @@
 import { getPublishedCollection } from "astro-course-university/content";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import { withBase } from "astro-theme-university/url";
+import playHero from "../../../assets/images/play-hero.jpg";
 import BrandLinkOverride from "../../../components/BrandLinkOverride.astro";
 import HomeLinkFix from "../../../components/HomeLinkFix.astro";
+import "../../../styles/play.css";
 import { siteConfig } from "../../../site-config";
 
 type Redundancy = "core" | "supporting" | "advantage";
@@ -76,10 +78,13 @@ const sections = redundancyOrder
 <ContentLayout
   title="Clue Web"
   description="Every clue in Into Blackwater Cove, tagged and cross-linked back to the scenes that carry it."
+  heroImage={playHero}
+  heroImageAlt="Ink line art of a face merging into tentacled, Mythos-touched features."
   {...siteConfig}
 >
   <BrandLinkOverride slot="head" />
   <HomeLinkFix slot="head" />
+  <div class="play-page">
   <p>
     This is the clue map behind the <a href={withBase("/play/scenario/")}
       >Into Blackwater Cove</a
@@ -127,6 +132,7 @@ const sections = redundancyOrder
       </section>
     ))
   }
+  </div>
 </ContentLayout>
 
 <style>

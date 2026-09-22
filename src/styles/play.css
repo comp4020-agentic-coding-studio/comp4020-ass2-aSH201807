@@ -60,6 +60,14 @@ main:has(> .play-page) > p.lead {
   color: #f0c675;
 }
 
+/* `code`/`pre` keep the theme's own light-mode background (near-white) —
+ * unlike the rest of this section, their surface isn't pinned to the dark
+ * palette, so the section's pale body text would sit almost invisibly on
+ * top of it. Darken just the text color to stay readable there. */
+.play-page code {
+  color: #241d10;
+}
+
 /* !important here beats the clue-web component's own scoped <style> block,
  * whose Astro-generated `[data-astro-cid-*]` attribute selectors happen to
  * match or exceed this rule's specificity regardless of source order. */

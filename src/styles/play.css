@@ -60,11 +60,16 @@ main:has(> .play-page) > p.lead {
   color: #f0c675;
 }
 
-/* `code`/`pre` keep the theme's own light-mode background (near-white) —
- * unlike the rest of this section, their surface isn't pinned to the dark
- * palette, so the section's pale body text would sit almost invisibly on
- * top of it. Darken just the text color to stay readable there. */
-.play-page code {
+/* `code`/`pre` back their text with the theme's own light/dark tokens
+ * (--at-code-bg / --at-bg-elevated), which flip with the visitor's system
+ * colour scheme — unlike the rest of this section, which is pinned to one
+ * fixed palette on purpose. Dark text (the previous fix, for light-mode's
+ * near-white background) went invisible for anyone in dark mode, where
+ * that same background token resolves dark. Pinning both background and
+ * text fixes it for every visitor regardless of scheme, matching how the
+ * rest of `.play-page` already ignores prefers-color-scheme. */
+.play-page :is(code, pre) {
+  background-color: #f1e6c8;
   color: #241d10;
 }
 

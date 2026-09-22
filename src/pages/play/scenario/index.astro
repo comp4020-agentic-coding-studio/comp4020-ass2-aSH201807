@@ -1,0 +1,30 @@
+---
+import { getPublishedCollection } from "astro-course-university/content";
+import Card from "astro-theme-university/components/Card.astro";
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import BrandLinkOverride from "../../../components/BrandLinkOverride.astro";
+import HomeLinkFix from "../../../components/HomeLinkFix.astro";
+import { siteConfig } from "../../../site-config";
+
+const scenes = await getPublishedCollection("playScenes");
+const opening = scenes.find((scene) => scene.data.start);
+if (!opening) throw new Error("play-scenes: no entry has start: true");
+---
+
+<ContentLayout
+  title="Into Blackwater Cove"
+  description="A short branching investigation — ten to fifteen minutes, three endings."
+  {...siteConfig}
+>
+  <BrandLinkOverride slot="head" />
+  <HomeLinkFix slot="head" />
+  <p>
+    You're an investigator, alone, in a small harbour town where something is
+    wrong with the clock. Every choice below leads somewhere — there's no way
+    to get stuck.
+  </p>
+  <h2>Where to go</h2>
+  <Card title="Begin" href={`/play/scenario/${opening.id}/`}>
+    <p>Into Blackwater Cove.</p>
+  </Card>
+</ContentLayout>

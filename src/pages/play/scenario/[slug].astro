@@ -1,0 +1,39 @@
+---
+import { render } from "astro:content";
+import { getPublishedCollection } from "astro-course-university/content";
+import Callout from "astro-theme-university/components/Callout.astro";
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import BrandLinkOverride from "../../../components/BrandLinkOverride.astro";
+import HomeLinkFix from "../../../components/HomeLinkFix.astro";
+import { siteConfig } from "../../../site-config";
+
+export async function getStaticPaths() {
+  const scenes = await getPublishedCollection("playScenes");
+  return scenes.map((scene) => ({
+    params: { slug: scene.id },
+    props: { scene },
+  }));
+}
+
+const { scene } = Astro.props;
+const { Content } = await render(scene);
+
+const endingLabel = {
+  success: "A good ending.",
+  failure: "A quiet ending.",
+  ambiguous: "An uneasy ending.",
+} as const;
+---
+
+<ContentLayout title={scene.data.title} {...siteConfig}>
+  <BrandLinkOverride slot="head" />
+  <HomeLinkFix slot="head" />
+  {
+    scene.data.ending && (
+      <Callout type={scene.data.ending === "success" ? "tip" : "info"}>
+        <p>{endingLabel[scene.data.ending]}</p>
+      </Callout>
+    )
+  }
+  <Content />
+</ContentLayout>

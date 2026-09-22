@@ -1,0 +1,44 @@
+---
+import Card from "astro-theme-university/components/Card.astro";
+import CardGrid from "astro-theme-university/components/CardGrid.astro";
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
+import BrandLinkOverride from "../../components/BrandLinkOverride.astro";
+import HomeLinkFix from "../../components/HomeLinkFix.astro";
+import { siteConfig } from "../../site-config";
+---
+
+<ContentLayout
+  title="Play"
+  description="A worked example of what this course's own pipeline produces, built from the same studio model taught in the weekly sessions."
+  {...siteConfig}
+>
+  <BrandLinkOverride slot="head" />
+  <HomeLinkFix slot="head" />
+  <p>
+    Nobody submits a real Final Scenario to a course template, so this section
+    is that deliverable's stand-in: one short original scenario, written to
+    the same pipeline the course teaches — premise and antagonist, structure,
+    a clue web tagged against both taxonomies from
+    <a href={withBase("/sessions/06-clue-architecture/")}>Studio 6</a>, and
+    enough redundant paths that a wrong turn doesn't dead-end the
+    investigation.
+  </p>
+  <p>
+    Play it as a short branching scenario, or skip straight to the clue web
+    that sits underneath it.
+  </p>
+
+  <h2>Where to go</h2>
+  <CardGrid columns={2}>
+    <Card title="Play the scenario" href="/play/scenario/">
+      <p>A short branching investigation. Ten to fifteen minutes, three endings.</p>
+    </Card>
+    <Card title="Explore the clue web" href="/play/clue-web/">
+      <p>
+        The same scenario's clues, tagged by redundancy and delivery, and
+        linked back to the scenes they appear in.
+      </p>
+    </Card>
+  </CardGrid>
+</ContentLayout>

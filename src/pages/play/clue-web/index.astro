@@ -1,0 +1,185 @@
+---
+import { getPublishedCollection } from "astro-course-university/content";
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
+import BrandLinkOverride from "../../../components/BrandLinkOverride.astro";
+import HomeLinkFix from "../../../components/HomeLinkFix.astro";
+import { siteConfig } from "../../../site-config";
+
+type Redundancy = "core" | "supporting" | "advantage";
+type Delivery = "literature" | "social" | "trace";
+
+interface ClueOccurrence {
+  sceneId: string;
+  sceneTitle: string;
+  delivery: Delivery;
+}
+
+interface ClueEntry {
+  id: string;
+  name: string;
+  redundancy: Redundancy;
+  occurrences: ClueOccurrence[];
+}
+
+const scenes = await getPublishedCollection("playScenes");
+
+// Same clue `id` recurring across scenes is a redundant path to the same
+// information (Investigation Architecture's rule), not a duplicate — so
+// occurrences accumulate under one entry rather than overwriting it.
+const clues = new Map<string, ClueEntry>();
+for (const scene of scenes) {
+  for (const clue of scene.data.clues) {
+    let entry = clues.get(clue.id);
+    if (!entry) {
+      entry = {
+        id: clue.id,
+        name: clue.name,
+        redundancy: clue.redundancy,
+        occurrences: [],
+      };
+      clues.set(clue.id, entry);
+    }
+    entry.occurrences.push({
+      sceneId: scene.id,
+      sceneTitle: scene.data.title,
+      delivery: clue.delivery,
+    });
+  }
+}
+
+const redundancyOrder: Redundancy[] = ["core", "supporting", "advantage"];
+const redundancyLabel: Record<Redundancy, string> = {
+  core: "Core clues",
+  supporting: "Supporting clues",
+  advantage: "Advantage clues",
+};
+const redundancyBlurb: Record<Redundancy, string> = {
+  core: "Needed to move the story forward at all. Investigation Architecture's rule is that every core clue gets a redundant path in, so a missed roll or a skipped scene never locks the ending away.",
+  supporting: "Fills in the picture. Nothing downstream depends on finding it.",
+  advantage: "Makes a later scene easier or safer. Skippable, never required.",
+};
+const deliveryLabel: Record<Delivery, string> = {
+  literature: "Literature",
+  social: "Social",
+  trace: "Trace",
+};
+
+const sections = redundancyOrder
+  .map((tier) => ({
+    tier,
+    entries: [...clues.values()].filter((c) => c.redundancy === tier),
+  }))
+  .filter((section) => section.entries.length > 0);
+---
+
+<ContentLayout
+  title="Clue Web"
+  description="Every clue in Into Blackwater Cove, tagged and cross-linked back to the scenes that carry it."
+  {...siteConfig}
+>
+  <BrandLinkOverride slot="head" />
+  <HomeLinkFix slot="head" />
+  <p>
+    This is the clue map behind the <a href={withBase("/play/scenario/")}
+      >Into Blackwater Cove</a
+    > demo, tagged against the two taxonomies from
+    <a href={withBase("/sessions/06-clue-architecture/")}>Studio 6</a>:
+    redundancy (core / supporting / advantage) and delivery (literature /
+    social / trace). It's the same kind of skeleton the
+    <a href={withBase("/assessments/investigation-architecture/")}
+      >Investigation Architecture</a
+    > brief asks you to hand in for your own scenario — expand a clue below to
+    see which scenes deliver it.
+  </p>
+
+  {
+    sections.map((section) => (
+      <section class="clue-tier">
+        <h2>{redundancyLabel[section.tier]}</h2>
+        <p>{redundancyBlurb[section.tier]}</p>
+        <ul class="clue-list">
+          {section.entries.map((clue) => (
+            <li>
+              <details>
+                <summary>
+                  {clue.name}
+                  <span class="path-count">
+                    {clue.occurrences.length === 1
+                      ? "1 path"
+                      : `${clue.occurrences.length} paths`}
+                  </span>
+                </summary>
+                <ul class="occurrence-list">
+                  {clue.occurrences.map((occurrence) => (
+                    <li>
+                      <a href={withBase(`/play/scenario/${occurrence.sceneId}/`)}>
+                        {occurrence.sceneTitle}
+                      </a>
+                      <span class="tag">{deliveryLabel[occurrence.delivery]}</span>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</ContentLayout>
+
+<style>
+  .clue-tier {
+    margin-block-end: 2rem;
+  }
+
+  .clue-list {
+    display: grid;
+    gap: 0.75rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .clue-list > li {
+    border: 1px solid var(--at-bg-alt);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  summary {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    font-weight: 600;
+  }
+
+  .path-count,
+  .tag {
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: var(--at-text-secondary);
+    background: var(--at-bg-alt);
+    border-radius: 999px;
+    padding: 0.15rem 0.6rem;
+    white-space: nowrap;
+  }
+
+  .occurrence-list {
+    margin-block-start: 0.75rem;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .occurrence-list > li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+</style>

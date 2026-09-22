@@ -47,7 +47,7 @@ of the specific passages they draw on —
 
 At that point, publishing the whole document made more sense than
 continuing to extract fragments into six lectures. I translated and
-organized the full raw notes into a standalone
+organized the raw notes into a standalone
 `materials/scenario-writing-guide` page — unnumbered and outside the
 verified-source list, since it's my own writing rather than a third-party
 reference — noting which lectures draw on it, and flagged it as recommended
@@ -70,3 +70,8 @@ art of my own — an honest choice given the time available, not a gap.
 `pnpm check` and `pnpm check:evidence` are green; this file is the only
 process record the assignment requires, since it carries no `reflections/`
 requirement.
+
+A `/play/` section was added since: an original demo scenario (not
+source #14) as branching pages, plus a clue-web explorer tagging its
+clues against week 6's taxonomies — outside the graded collections and
+fixed spec assertions.

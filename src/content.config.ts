@@ -96,4 +96,34 @@ export const collections = {
           }
         }),
   }),
+
+  // A worked-example CYOA demo (src/pages/play/) and its clue-web view, both
+  // reading this same collection so the two stay in sync by construction.
+  // Deliberately not in graphCollections/courseApiCollections: it's original
+  // demo fiction, not course-structural content, and must stay out of the
+  // programs/courses API and the fixed assignment-2 spec assertions.
+  // Nested under play/scenario/ (not play-scenes/) so llms.txt's file-path
+  // derived URL matches the actual /play/scenario/<slug>/ route.
+  playScenes: defineCollection({
+    loader: courseNodeLoader("play/scenario"),
+    schema: z.object({
+      title: z.string().trim().min(1),
+      // Exactly one entry is the opening scene; scenario/index.astro finds it.
+      start: z.coerce.boolean().default(false),
+      // Present only on terminal scenes.
+      ending: z.enum(["success", "failure", "ambiguous"]).optional(),
+      // A clue `id` recurring across scenes is a redundant path to the same
+      // information — the taxonomies are Studio 6's (redundancy) and (delivery).
+      clues: z
+        .array(
+          z.object({
+            id: z.string().trim().min(1),
+            name: z.string().trim().min(1),
+            redundancy: z.enum(["core", "supporting", "advantage"]),
+            delivery: z.enum(["literature", "social", "trace"]),
+          }),
+        )
+        .default([]),
+    }),
+  }),
 };

@@ -45,3 +45,6 @@ clue web with taxonomy tags, puzzle list, check list with failure text,
 and NPC roster with one-sentence purposes. This is also the document your
 playtest in week 11 will be run from, so it should be usable at a table,
 not just readable.
+
+See the [clue web explorer](/play/clue-web/) for a worked example of a
+tagged clue web, including a redundant path to a core clue.

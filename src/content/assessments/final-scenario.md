@@ -39,3 +39,6 @@ The complete packet: scenario text organised by scene, clue map, NPC
 sheets, and any player handouts, assembled so someone else could pick it
 up and run it without you in the room. Include a short note naming at
 least one specific change you made because of your playtest.
+
+For a worked example of what a finished packet feels like at the table,
+see the [Play](/play/) demo scenario.

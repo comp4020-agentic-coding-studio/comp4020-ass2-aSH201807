@@ -2,7 +2,6 @@
 import { getPublishedCollection } from "astro-course-university/content";
 import Card from "astro-theme-university/components/Card.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
-import playHero from "../../../assets/images/play-hero.jpg";
 import BrandLinkOverride from "../../../components/BrandLinkOverride.astro";
 import HomeLinkFix from "../../../components/HomeLinkFix.astro";
 import "../../../styles/play.css";
@@ -16,8 +15,6 @@ if (!opening) throw new Error("play-scenes: no entry has start: true");
 <ContentLayout
   title="Into Blackwater Cove"
   description="A short branching investigation — ten to fifteen minutes, three endings."
-  heroImage={playHero}
-  heroImageAlt="Ink line art of a face merging into tentacled, Mythos-touched features."
   {...siteConfig}
 >
   <BrandLinkOverride slot="head" />

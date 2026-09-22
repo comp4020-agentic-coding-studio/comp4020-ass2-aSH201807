@@ -3,7 +3,6 @@ import { render } from "astro:content";
 import { getPublishedCollection } from "astro-course-university/content";
 import Callout from "astro-theme-university/components/Callout.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
-import playHero from "../../../assets/images/play-hero.jpg";
 import BrandLinkOverride from "../../../components/BrandLinkOverride.astro";
 import HomeLinkFix from "../../../components/HomeLinkFix.astro";
 import "../../../styles/play.css";
@@ -27,12 +26,7 @@ const endingLabel = {
 } as const;
 ---
 
-<ContentLayout
-  title={scene.data.title}
-  heroImage={playHero}
-  heroImageAlt="Ink line art of a face merging into tentacled, Mythos-touched features."
-  {...siteConfig}
->
+<ContentLayout title={scene.data.title} {...siteConfig}>
   <BrandLinkOverride slot="head" />
   <HomeLinkFix slot="head" />
   <div class="play-page">

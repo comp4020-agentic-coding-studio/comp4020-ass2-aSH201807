@@ -1,14 +1,40 @@
 /* Atmosphere for the /play/ section only. An original demo scenario reads
- * better in something closer to pulp-horror typesetting than the course
- * site's default sans-serif, so each play/*.astro page imports this
- * directly in its own frontmatter (unlike brand.css/nav-banner.css, this
- * is never added to astro.config.ts's site-wide brandCss).
+ * better as a page lifted from someone's field journal than in the course
+ * site's default sans-serif on white, so each play/*.astro page imports
+ * this directly in its own frontmatter (unlike brand.css/nav-banner.css,
+ * this is never added to astro.config.ts's site-wide brandCss).
  *
- * Only font-family/letter-spacing change here — text and background
- * colours stay on the theme's own tokens throughout, so the site's
- * verified contrast ratios aren't put at risk by a decorative typeface.
+ * The artwork is a CSS background-image (decorative, so no alt text is
+ * needed — assistive tech ignores CSS backgrounds automatically), not an
+ * <img>. Everything under `main:has(> .play-page)` is a fixed, literal
+ * dark-on-light-parchment palette rather than the theme's light/dark
+ * tokens, since this section is meant to look the same regardless of the
+ * visitor's colour-scheme preference — like the nav's own tentacle banner.
  */
 @import url("https://fonts.googleapis.com/css2?family=Metamorphous&family=IM+Fell+English:ital@0;1&display=swap");
+
+main:has(> .play-page) {
+  position: relative;
+  background-color: #0d0b14;
+  background-image:
+    linear-gradient(rgba(8, 6, 16, 0.82), rgba(8, 6, 16, 0.88)),
+    url("../assets/images/play-hero.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+main:has(> .play-page) > h1 {
+  font-family: "Metamorphous", Georgia, serif;
+  letter-spacing: 0.04em;
+  color: #f1e6c8;
+  text-shadow: 0 2px 12px rgb(0 0 0 / 70%);
+}
+
+main:has(> .play-page) > p.lead {
+  color: #d8cdb0;
+}
 
 .play-page {
   --play-heading-font: "Metamorphous", Georgia, serif;
@@ -16,17 +42,34 @@
 
   font-family: var(--play-body-font);
   font-size: 1.05em;
+  color: #e8dfc8;
 }
 
 .play-page :is(h2, h3, summary) {
   font-family: var(--play-heading-font);
   letter-spacing: 0.03em;
+  color: #f1e6c8;
 }
 
-/* This file is only imported by pages under src/pages/play/, so styling
- * .at-hero-title unconditionally here can't leak into the rest of the site.
- */
-.at-hero-title {
-  font-family: "Metamorphous", Georgia, serif;
-  letter-spacing: 0.04em;
+.play-page a {
+  color: #d8a94e;
+}
+
+.play-page a:hover,
+.play-page a:focus-visible {
+  color: #f0c675;
+}
+
+/* !important here beats the clue-web component's own scoped <style> block,
+ * whose Astro-generated `[data-astro-cid-*]` attribute selectors happen to
+ * match or exceed this rule's specificity regardless of source order. */
+.play-page .clue-list > li {
+  background: rgb(20 16 30 / 55%) !important;
+  border-color: rgb(241 230 200 / 25%) !important;
+}
+
+.play-page .path-count,
+.play-page .tag {
+  color: #e8dfc8 !important;
+  background: rgb(241 230 200 / 12%) !important;
 }
